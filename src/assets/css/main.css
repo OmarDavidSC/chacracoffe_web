@@ -1,0 +1,100 @@
+
+:root {
+    font-family: "Pixelify Sans", sans-serif;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+
+    /* Colores de marca */
+    --retro-blue: #3978d4;
+    --retro-blue-light: #5596e6;
+    --retro-cyan: #168ba3;
+    --retro-purple: #6866c9;
+
+    --transition-theme:
+        background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/*Modo Claro*/
+
+html[data-theme="light"] {
+    color-scheme: light;
+
+    --retro-black: #f5f8fc;
+    --retro-black-soft: #edf2f8;
+
+    --retro-panel: #ffffff;
+    --retro-panel-light: #f2f6fb;
+
+    --retro-border: #d7e0ec;
+    --retro-border-light: #afc1d8;
+
+    --retro-text: #172033;
+    --retro-muted: #697a92;
+
+    --retro-shadow: rgba(27, 45, 75, 0.1);
+
+    --retro-glow:
+        0 0 8px rgba(57, 120, 212, 0.1), 0 0 18px rgba(57, 120, 212, 0.06);
+
+    --retro-glow-strong:
+        0 0 15px rgba(22, 139, 163, 0.12), 0 0 35px rgba(57, 120, 212, 0.1);
+
+    --page-background:
+        radial-gradient(circle at 15% 0%, rgba(85, 150, 230, 0.1), transparent 35%),
+        radial-gradient(circle at 90% 20%,
+            rgba(104, 102, 201, 0.06),
+            transparent 30%),
+        #f5f8fc;
+}
+
+/* Modo Oscuro */
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+
+    --retro-black: #050816;
+    --retro-black-soft: #080d1c;
+
+    --retro-panel: #0d1730;
+    --retro-panel-light: #132448;
+
+    --retro-border: #1d355c;
+    --retro-border-light: #315c98;
+
+    --retro-text: #eaf7ff;
+    --retro-muted: #8fa6c9;
+
+    --retro-blue: #4da3ff;
+    --retro-blue-light: #82c6ff;
+
+    --retro-cyan: #58f3ff;
+    --retro-purple: #8b8aff;
+
+    --retro-shadow: rgba(0, 0, 0, 0.38);
+
+    --retro-glow:
+        0 0 8px rgba(77, 163, 255, 0.28), 0 0 18px rgba(77, 163, 255, 0.14);
+
+    --retro-glow-strong:
+        0 0 15px rgba(88, 243, 255, 0.35), 0 0 35px rgba(77, 163, 255, 0.22);
+
+    --page-background:
+        radial-gradient(circle at 50% -10%,
+            rgba(30, 85, 170, 0.28) 0%,
+            transparent 42%),
+        radial-gradient(circle at 100% 100%,
+            rgba(70, 60, 160, 0.15) 0%,
+            transparent 40%),
+        #050816;
+}
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+    .container {
+        width: min(100% - 28px, 1200px);
+    }
+}
