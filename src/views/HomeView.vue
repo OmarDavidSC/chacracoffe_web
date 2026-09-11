@@ -1,15 +1,19 @@
 <script setup lang="ts">
-   const nombre = "Chacra Coffe";
+   import HeroSection from '../widzard/HeroSection.vue';
+   import OurCoffeeSection from '../widzard/OurCoffeeSection.vue';
+   import OurOriginSection from '../widzard/OurOriginSection.vue';
+   import WhyChooseSection from '../widzard/WhyChooseSection.vue';
+   import OurProducersSection from '../widzard/OurProducersSection.vue';
+   import CoffeeJourneySection from '../widzard/CoffeeJourneySection.vue';
+   import CtaSection from '../widzard/CtaSection.vue';
 </script>
 
 <template>
-    <div class="titulo"> 
-       Hola Mundo estes es la structura de la web {{ nombre }}
-    </div>
+    <HeroSection />
+    <OurCoffeeSection />
+    <OurOriginSection />
+    <WhyChooseSection />
+    <OurProducersSection />
+    <CoffeeJourneySection />
+    <CtaSection />
 </template>
-
-<style>
-    .titulo{
-        color: yellow;
-    }
-</style>
