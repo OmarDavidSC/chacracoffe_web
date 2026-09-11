@@ -1,11 +1,11 @@
 <script setup lang="ts">
-   import HeroSection from '../widzard/HeroSection.vue';
-   import OurCoffeeSection from '../widzard/OurCoffeeSection.vue';
-   import OurOriginSection from '../widzard/OurOriginSection.vue';
-   import WhyChooseSection from '../widzard/WhyChooseSection.vue';
-   import OurProducersSection from '../widzard/OurProducersSection.vue';
-   import CoffeeJourneySection from '../widzard/CoffeeJourneySection.vue';
-   import CtaSection from '../widzard/CtaSection.vue';
+   import HeroSection from '../widzard/home/HeroSection.vue'; 
+   import OurCoffeeSection from '../widzard/home/OurCoffeeSection.vue';
+   import OurOriginSection from '../widzard/home/OurOriginSection.vue';
+   import WhyChooseSection from '../widzard/home/WhyChooseSection.vue';
+   import OurProducersSection from '../widzard/home/OurProducersSection.vue';
+   import CoffeeJourneySection from '../widzard/home/CoffeeJourneySection.vue';
+   import CtaSection from '../widzard/home/CtaSection.vue';
 </script>
 
 <template>

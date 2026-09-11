@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import HeroStats from '../components/partials/hero/HeroStats.vue';
+    import HeroStats from '../../components/partials/hero/HeroStats.vue';
 </script>
 <template>
     <section class="hero" id="home">
