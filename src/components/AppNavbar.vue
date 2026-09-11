@@ -49,20 +49,18 @@ onUnmounted(() => {
                     <router-link to="/" class="active">Home</router-link>
                 </li>
                 <li>
-                    <router-link to="/coffees">Coffees</router-link>
+                    <router-link to="/ourstory">Our Story</router-link>
                 </li>
                 <li>
-                    <router-link to="/offer-list">Offer List</router-link>
+                    <router-link to="/about">About Us</router-link>
                 </li>
                 <li>
-                    <router-link to="/new-releases">New Releases</router-link>
+                    <router-link to="/offer">Offer List</router-link>
                 </li>
                 <li>
-                    <router-link to="/our-story">Story</router-link>
+                    <router-link to="/new-releases">Blog</router-link>
                 </li>
-                <li>
-                    <router-link to="/about">About</router-link>
-                </li>
+                
                 <li>
                     <router-link to="/contact">Contact</router-link>
                 </li>
@@ -104,7 +102,7 @@ onUnmounted(() => {
                     </router-link>
                 </li>
                 <li>
-                    <router-link to="/our-story" @click="closeMobile">
+                    <router-link to="/ourstory" @click="closeMobile">
                         Story
                     </router-link>
                 </li>
