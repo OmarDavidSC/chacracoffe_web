@@ -1,183 +1,212 @@
 <template>
-    <footer class="footer">
-    <div class="footer-top">
-      <section class="footer-logo">
-        <img src="/images/Logo_Chacra.png" alt="Chacra Coffee" class="footer__logo"/>
-        <p>SPECIALTY COFFEE <br/> FROM PERU</p>
-      </section>
-
-      <nav class="footer-columna">
-        <h2>Company</h2>
-        <a href="#">About Us</a>
-        <a href="#">Our Story</a>
-        <a href="#">Sustainability</a>
-        <a href="#">Careers</a>
-      </nav>
-
-      <nav class="footer-columna">
-        <h2>Coffees</h2>
-        <a href="#">Regional Blends</a>
-        <a href="#">Microlots</a>
-        <a href="#">Experimental Lots</a>
-        <a href="#">Offer List</a>
-      </nav>
-
-      <nav class="footer-columna">
-        <h2>Resources</h2>
-        <a href="#">Quality Control</a>
-        <a href="#">Traceability</a>
-        <a href="#">Shipping & Logistics</a>
-        <a href="#">FAQs</a>
-      </nav>
-
-      <section class="footer-columna">
-        <h2>Contact</h2>
-        <a href="mailto:info@chacracoffee.com">info@chacracoffee.com</a>
-        <a href="tel:+51937911406">+51 937 911 406</a>
-        <p>Jaén, Cajamarca, Peru</p>
-        <div class="footer-redes">
-            <p class="footer-redes-titulo">Follow us</p>
-
-            <div class="footer-redes-links">
-                <a class="footer-redes-link" href="#" aria-label="Instagram"> IG </a>
-                <a class="footer-redes-link" href="#" aria-label="Facebook">f</a>
-            </div>
-
-        </div>
-      </section>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 CHACRA COFFEE LIMITED. ALL RIGHTS RESERVED.</p>
-
-      <div>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
+  <footer class="footer">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <img src="../../public/img/Logo_Chacra.png" alt="Chacra Coffee" class="footer-logo logo-img">
+        <p class="footer-tag">Specialty Coffee<br>From Peru</p>
       </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Coffees</h4>
+          <ul>
+            <li><a href="#">Regional Blends</a></li>
+            <li><a href="#">Microlots</a></li>
+            <li><a href="#">Experimental Lots</a></li>
+            <li><a href="#">Offer List</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Quality Control</a></li>
+            <li><a href="#">Traceability</a></li>
+            <li><a href="#">Shipping &amp; Logistics</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@chacracoffee.com">info@chacracoffee.com</a></li>
+            <li><a href="https://wa.me/51937791406">+51 937 791 406</a></li>
+            <li>Jaén, Cajamarca, Peru</li>
+          </ul>
+          <div class="footer-social"><span>Follow Us</span>
+            <div class="socials">
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/chacracoffee/" class="soc-ico" target="_blank"
+                rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/profile.php?id=61559304344126" class="soc-ico" target="_blank"
+                rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> CHACRA COFFEE LIMITED. ALL RIGHTS RESERVED.</span>
+      <div><a href="Privacy.html">Privacy Policy</a><a href="Conditions.html">Terms &amp; Conditions</a></div>
     </div>
   </footer>
 </template>
 
-<style scoped>
-
-.footer__logo {
-  display: block;
-  width: 72px;
-  height: auto;
-}
-
+<style>
 .footer {
-  padding: 72px 24px 24px;
-  background: #1c1d1a;
-  color: #f4f1e8;
+  background: var(--charcoal);
+  padding-top: 64px;
 }
 
-.footer-top {
+.footer-inner {
   display: grid;
-  grid-template-columns: 1.3fr repeat(4, 1fr);
-  gap: 56px;
-  width: min(100%, 1160px);
-  margin: 0 auto;
+  grid-template-columns: 200px 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
 }
 
-.footer-columna {
+.footer-brand {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 14px;
-}
-
-.footer-columna h2 {
-  margin: 0 0 4px;
-  color: #f4f1e8;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-}
-
-.footer-columna a {
-  color: #7c827d;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.footer-columna p {
-  margin: 0;
-  color: #7c827d;
-  font-size: 14px;
+  gap: 12px;
 }
 
 .footer-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
+  height: 58px;
+  width: auto;
+  object-fit: contain;
 }
 
-.footer-logo p {
-  margin: 0;
-  color: #7c827d;
+.footer-tag {
   font-size: 10px;
-  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .28);
   line-height: 1.7;
-  letter-spacing: 1.2px;
+  margin-top: 4px;
 }
 
-.footer-redes {
-  margin-top: 8px;
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
-.footer-redes-titulo {
-  margin: 0 0 10px;
-  color: #7c827d;
+.footer-col h4 {
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 1.2px;
+  letter-spacing: .16em;
   text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 14px;
 }
 
-.footer-redes-links {
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col li,
+.footer-col li a {
+  font-size: 13px;
+  color: rgba(255, 255, 255, .36);
+  transition: color var(--tr);
+}
+
+.footer-col li a:hover {
+  color: var(--white);
+}
+
+.footer-social {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-social>span {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .26);
+}
+
+.socials {
   display: flex;
   gap: 8px;
 }
 
-.footer-redes-link {
-  display: grid;
-  place-items: center;
-
+.soc-ico {
   width: 34px;
   height: 34px;
-  border: 1px solid #444842;
-  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, .42);
+  transition: all var(--tr);
+}
 
-  color: #b7bbb4;
-  font-size: 11px;
-  text-decoration: none;
+.soc-ico svg {
+  width: 14px;
+  height: 14px;
+}
+
+.soc-ico:hover {
+  background: var(--green-mid);
+  border-color: var(--green-mid);
+  color: var(--white);
 }
 
 .footer-bottom {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  width: min(100%, 1160px);
-  margin: 64px auto 0;
-  padding-top: 22px;
-  border-top: 1px solid #31342f;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-.footer-bottom p {
-  margin: 0;
-  color: #6f756f;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.7px;
-}
-
+.footer-bottom span,
 .footer-bottom a {
-  color: #6f756f;
-  font-size: 12px;
-  text-decoration: none;
+  font-size: 11px;
+  color: rgba(255, 255, 255, .22);
+  letter-spacing: .05em;
+}
+
+.footer-bottom div {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-bottom a:hover {
+  color: rgba(255, 255, 255, .55);
 }
 </style>
