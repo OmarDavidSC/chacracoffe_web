@@ -18,7 +18,6 @@ import AppFooter from "./components/AppFooter.vue";
 <style>
 .app-container {
   min-height: 100vh;
-  color: #1f2937;
   background: black;
 }
 </style>
