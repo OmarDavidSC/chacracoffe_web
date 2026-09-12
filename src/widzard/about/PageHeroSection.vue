@@ -24,7 +24,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('../img/Fondo_Web.jpg');
+  background-image: url('/img/about/Fondo_Cerros.jpeg');
   background-size: cover;
   background-position: center 30%;
   overflow: hidden;
