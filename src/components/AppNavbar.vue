@@ -58,7 +58,7 @@ onUnmounted(() => {
                     <router-link to="/offer">Offer List</router-link>
                 </li>
                 <li>
-                    <router-link to="/new-releases">Blog</router-link>
+                    <router-link to="/blog">Blog</router-link>
                 </li>
                 
                 <li>

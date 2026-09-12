@@ -5,6 +5,11 @@ import StatsBarSection from '../widzard/about/StatsBarSection.vue';
 import WhoWeAreSection from '../widzard/about/WhoWeAreSection.vue';
 import MissionValuesSection from '../widzard/about/MissionValuesSection.vue';
 import TeamSection from '../widzard/about/TeamSection.vue';
+import OurFacilitySection from '../widzard/about/OurFacilitySection.vue';
+import OurProcessingSection from '../widzard/about/OurProcessingSection.vue';
+import HowItWorksSection from '../widzard/about/HowItWorksSection.vue';
+import StatsSection from '../widzard/about/StatsSection.vue';
+import InsideThePlantSection from '../widzard/about/InsideThePlantSection.vue';
 </script>
 
 <template>
@@ -13,4 +18,9 @@ import TeamSection from '../widzard/about/TeamSection.vue';
     <WhoWeAreSection />
     <MissionValuesSection />
     <TeamSection />
+    <OurFacilitySection />
+    <OurProcessingSection />
+    <StatsSection />
+    <HowItWorksSection />
+    <InsideThePlantSection />>
 </template>
