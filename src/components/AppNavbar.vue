@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { locale } = useI18n();
 
 const menuOpen = ref(false);
 const scrolled = ref(false);
@@ -24,12 +27,18 @@ const handleClickOutside = (event: MouseEvent) => {
         closeMobile();
     }
 };
+
+//aqui va la traducción de idiomas
+const changeLanguage = (event: Event) => {
+    const target = event.target as HTMLSelectElement;
+    locale.value = target.value;
+}
 onMounted(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     document.addEventListener("click", handleClickOutside);
-
     handleScroll();
 });
+
 onUnmounted(() => {
     window.removeEventListener("scroll", handleScroll);
     document.removeEventListener("click", handleClickOutside);
@@ -46,32 +55,38 @@ onUnmounted(() => {
             <!-- DESKTOP MENU -->
             <ul class="nav-links">
                 <li>
-                    <router-link to="/" class="active">Home</router-link>
+                    <router-link to="/" class="active">{{ $t("navbar.home") }}</router-link>
                 </li>
                 <li>
-                    <router-link to="/ourstory">Our Story</router-link>
+                    <router-link to="/ourstory">{{ $t("navbar.ourStory") }}</router-link>
                 </li>
                 <li>
-                    <router-link to="/about">About Us</router-link>
+                    <router-link to="/about">{{ $t("navbar.about") }}</router-link>
                 </li>
                 <li>
-                    <router-link to="/offer">Offer List</router-link>
+                    <router-link to="/offer">{{ $t("navbar.offer") }}</router-link>
                 </li>
                 <li>
-                    <router-link to="/new-releases">Blog</router-link>
+                    <router-link to="/new-releases">{{ $t("navbar.blog") }}</router-link>
                 </li>
-                
+
                 <li>
-                    <router-link to="/contact">Contact</router-link>
+                    <router-link to="/contact">{{ $t("navbar.contact") }}</router-link>
                 </li>
             </ul>
             <!-- ACTIONS DESKTOP -->
             <div class="nav-actions">
                 <router-link to="/contact" class="btn btn-nav">
-                    Request Samples
+                    {{ $t("navbar.requestSamples") }}
                 </router-link>
-                <button class="lang-btn">EN</button>
-                <button class="lang-btn">ES</button>
+                <button class="lang-btn">
+                    <select class="lang-btn" :value="locale" @change="changeLanguage">
+                        <!--Boton seleccionable-->
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                    </select>
+                </button>
+                <button class="lang-btn">{{ $t("navbar.login") }}</button>
             </div>
             <!-- HAMBURGER -->
             <button class="hamburger" :class="{ open: menuOpen }" @click.stop="toggleMobile" aria-label="Abrir menú">
@@ -84,39 +99,39 @@ onUnmounted(() => {
         <div class="mobile-menu" :class="{ open: menuOpen }">
             <ul>
                 <li>
-                    <router-link to="/" @click="closeMobile"> Home </router-link>
+                    <router-link to="/" @click="closeMobile"> {{ $t("navbar.home") }} </router-link>
                 </li>
                 <li>
                     <router-link to="/coffees" @click="closeMobile">
-                        Coffees
+                        {{ $t("navbar.coffees") }}
                     </router-link>
                 </li>
                 <li>
                     <router-link to="/offer-list" @click="closeMobile">
-                        Offer List
+                        {{ $t("navbar.offer") }}
                     </router-link>
                 </li>
                 <li>
                     <router-link to="/new-releases" @click="closeMobile">
-                        New Releases
+                        {{ $t("navbar.blog") }}    
                     </router-link>
                 </li>
                 <li>
                     <router-link to="/ourstory" @click="closeMobile">
-                        Story
+                        {{ $t("navbar.ourStory") }}
                     </router-link>
                 </li>
                 <li>
-                    <router-link to="/about" @click="closeMobile"> About </router-link>
+                    <router-link to="/about" @click="closeMobile"> {{ $t("navbar.about") }} </router-link>
                 </li>
                 <li>
                     <router-link to="/contact" @click="closeMobile">
-                        Contact
+                        {{ $t("navbar.contact") }}
                     </router-link>
                 </li>
             </ul>
             <router-link to="/contact" class="btn btn-nav" style="align-self: flex-start" @click="closeMobile">
-                Request Samples
+                {{ $t("navbar.requestSamples") }}
             </router-link>
         </div>
     </nav>
