@@ -1,12 +1,13 @@
 <template>
-<section class="story-hero">
-  <div class="story-hero-bg"></div>
-  <div class="story-hero-inner container">
-    <span class="eyebrow gold">Since 2014</span>
-    <h1 class="page-title">Our <em>Story.</em></h1>
-    <p class="page-sub">A family-rooted company built on direct relationships with coffee producers across Northern Peru — from a single farm in Jaén to a trusted name in the European specialty market.</p>
-  </div>
-</section>
+  <section class="story-hero">
+    <div class="story-hero-bg"></div>
+    <div class="story-hero-inner container">
+      <span class="eyebrow gold">Since 2014</span>
+      <h1 class="page-title">Our <em>Story.</em></h1>
+      <p class="page-sub">A family-rooted company built on direct relationships with coffee producers across Northern
+        Peru — from a single farm in Jaén to a trusted name in the European specialty market.</p>
+    </div>
+  </section>
 </template>
 
 <style>
@@ -20,7 +21,7 @@
 .story-hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('Fondo_Web.jpg');
+  background-image: url('../../../public/img/coffeestory/Fondo_Web.jpg');
   background-size: cover;
   background-position: center;
   opacity: .22;

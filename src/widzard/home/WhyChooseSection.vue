@@ -87,7 +87,7 @@
 
 .why-pillars {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr) !important;
     width: 100%;
     max-width: 860px;
     border: 1px solid rgba(255, 255, 255, .09);

@@ -10,8 +10,8 @@
             <p class="hero-tagline">From the farms to the world.
             </p>
             <div class="hero-btns">
-                <a href="Coffees.html" class="btn btn-ghost">View Current Offer List</a>
-                <a href="Contact.html" class="btn btn-gold">Request Samples</a>
+                <router-link to="/offer" class="btn btn-ghost"> View Current Offer List </router-link>
+                <router-link to="/contact" class="btn btn-gold"> Request Samples </router-link>
             </div>
         </div>
     </section>

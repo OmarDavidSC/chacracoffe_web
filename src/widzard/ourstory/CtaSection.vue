@@ -1,13 +1,17 @@
 <template>
-<section class="cta-section">
-  <div class="cta-bg"></div>
-  <div class="cta-inner">
-    <div class="cta-pill">Want to Know More?</div>
-    <h2 class="cta-title">Let's build something<br>together.</h2>
-    <p class="cta-sub">Whether you're a roaster looking for your next origin, or just curious about how we work — we'd love to hear from you.</p>
-    <div class="cta-btns"><a href="Coffees.html" class="btn btn-gold">View Our Coffees</a><a href="Contact.html" class="btn btn-ghost">Contact Us</a></div>
-  </div>
-</section>
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="cta-inner">
+      <div class="cta-pill">Want to Know More?</div>
+      <h2 class="cta-title">Let's build something<br>together.</h2>
+      <p class="cta-sub">Whether you're a roaster looking for your next origin, or just curious about how we work — we'd
+        love to hear from you.</p>
+      <div class="cta-btns">
+        <router-link to="/offer" class="btn btn-gold"> View Our Coffees </router-link>
+        <router-link to="/contact" class="btn btn-ghost"> Contact Us </router-link>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style>

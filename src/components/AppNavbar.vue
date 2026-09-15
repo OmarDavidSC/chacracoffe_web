@@ -5,6 +5,7 @@ import { useI18n } from "vue-i18n";
 const { locale } = useI18n();
 
 const menuOpen = ref(false);
+const languageOpen = ref(false);
 const scrolled = ref(false);
 
 const handleScroll = () => {
@@ -18,88 +19,205 @@ const closeMobile = () => {
 
 const toggleMobile = () => {
     menuOpen.value = !menuOpen.value;
+    languageOpen.value = false;
+
     document.body.style.overflow = menuOpen.value ? "hidden" : "";
 };
+
+const toggleLanguage = () => {
+    languageOpen.value = !languageOpen.value;
+};
+
+const changeLanguage = (language: string) => {
+    locale.value = language;
+    languageOpen.value = false;
+};
+
 const handleClickOutside = (event: MouseEvent) => {
     const navbar = document.getElementById("navbar");
 
     if (navbar && !navbar.contains(event.target as Node)) {
         closeMobile();
+        languageOpen.value = false;
     }
 };
 
-//aqui va la traducción de idiomas
-const changeLanguage = (event: Event) => {
-    const target = event.target as HTMLSelectElement;
-    locale.value = target.value;
-}
 onMounted(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     document.addEventListener("click", handleClickOutside);
+
     handleScroll();
 });
 
 onUnmounted(() => {
     window.removeEventListener("scroll", handleScroll);
     document.removeEventListener("click", handleClickOutside);
+
     document.body.style.overflow = "";
 });
 </script>
+
 <template>
     <nav id="navbar" class="navbar" :class="{ scrolled: scrolled }">
         <div class="nav-inner">
-            <!-- LOGO -->
             <router-link to="/" class="nav-logo">
                 <img src="../../public/img/Logo_Chacra.png" alt="Chacra Coffee" class="logo-img" />
             </router-link>
-            <!-- DESKTOP MENU -->
             <ul class="nav-links">
                 <li>
-                    <router-link to="/" class="active">{{ $t("navbar.home") }}</router-link>
+                    <router-link to="/">
+                        {{ $t("navbar.home") }}
+                    </router-link>
                 </li>
                 <li>
-                    <router-link to="/ourstory">{{ $t("navbar.ourStory") }}</router-link>
+                    <router-link to="/ourstory">
+                        {{ $t("navbar.ourStory") }}
+                    </router-link>
                 </li>
                 <li>
-                    <router-link to="/about">{{ $t("navbar.about") }}</router-link>
+                    <router-link to="/about">
+                        {{ $t("navbar.about") }}
+                    </router-link>
                 </li>
                 <li>
-                    <router-link to="/offer">{{ $t("navbar.offer") }}</router-link>
+                    <router-link to="/offer">
+                        {{ $t("navbar.offer") }}
+                    </router-link>
                 </li>
                 <li>
-                    <router-link to="/new-releases">{{ $t("navbar.blog") }}</router-link>
+                    <router-link to="/blog">
+                        {{ $t("navbar.blog") }}
+                    </router-link>
                 </li>
-
                 <li>
-                    <router-link to="/contact">{{ $t("navbar.contact") }}</router-link>
+                    <router-link to="/contact">
+                        {{ $t("navbar.contact") }}
+                    </router-link>
                 </li>
             </ul>
-            <!-- ACTIONS DESKTOP -->
             <div class="nav-actions">
+                <!-- REQUEST SAMPLES -->
                 <router-link to="/contact" class="btn btn-nav">
                     {{ $t("navbar.requestSamples") }}
                 </router-link>
-                <button class="lang-btn">
-                    <select class="lang-btn" :value="locale" @change="changeLanguage">
-                        <!--Boton seleccionable-->
-                        <option value="en">EN</option>
-                        <option value="es">ES</option>
-                    </select>
-                </button>
-                <button class="lang-btn">{{ $t("navbar.login") }}</button>
+                <div class="language-wrapper">
+                    <button type="button" class="language-btn" @click.stop="toggleLanguage">
+                        <span class="language-flag">
+                            {{ locale === "es" ? "🇪🇸" : "🇬🇧" }}
+                        </span>
+                        <span class="language-code">
+                            {{ locale === "es" ? "ES" : "EN" }}
+                        </span>
+                        <svg class="language-chevron" :class="{ open: languageOpen }" width="11" height="11"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div v-if="languageOpen" class="language-dropdown" @click.stop>
+                        <!-- ENGLISH -->
+                        <button type="button" class="language-option" :class="{
+                            selected: locale === 'en',
+                        }" @click="changeLanguage('en')">
+                            <span class="language-option-flag"> 🇬🇧 </span>
+                            <span> English </span>
+                            <svg v-if="locale === 'en'" class="language-check" width="13" height="13"
+                                viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12L10 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button type="button" class="language-option" :class="{
+                            selected: locale === 'es',
+                        }" @click="changeLanguage('es')">
+                            <span class="language-option-flag"> 🇪🇸 </span>
+
+                            <span> Español </span>
+                            <svg v-if="locale === 'es'" class="language-check" width="13" height="13"
+                                viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12L10 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- <button type="button" class="login-btn">
+                    <svg class="login-icon" width="14" height="14" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.7" />
+                        <path d="M20 21C20 16.5817 16.4183 13 12 13C7.58172 13 4 16.5817 4 21" stroke="currentColor"
+                            stroke-width="1.7" stroke-linecap="round" />
+                    </svg>
+                    <span>
+                        {{ $t("navbar.login") }}
+                    </span>
+                </button> -->
             </div>
-            <!-- HAMBURGER -->
-            <button class="hamburger" :class="{ open: menuOpen }" @click.stop="toggleMobile" aria-label="Abrir menú">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="mobile-actions">
+                <!-- MOBILE LANGUAGE -->
+                <div class="language-wrapper mobile-language">
+                    <button type="button" class="language-btn" @click.stop="toggleLanguage">
+                        <span class="language-flag">
+                            {{ locale === "es" ? "🇪🇸" : "🇬🇧" }}
+                        </span>
+
+                        <span class="language-code">
+                            {{ locale === "es" ? "ES" : "EN" }}
+                        </span>
+
+                        <svg class="language-chevron" :class="{ open: languageOpen }" width="10" height="10"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <!-- MOBILE LANGUAGE DROPDOWN -->
+                    <div v-if="languageOpen" class="language-dropdown mobile-language-dropdown" @click.stop>
+                        <button type="button" class="language-option" :class="{
+                            selected: locale === 'en',
+                        }" @click="changeLanguage('en')">
+                            <span class="language-option-flag"> 🇬🇧 </span>
+                            <span> English </span>
+                            <svg v-if="locale === 'en'" class="language-check" width="13" height="13"
+                                viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12L10 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button type="button" class="language-option" :class="{
+                            selected: locale === 'es',
+                        }" @click="changeLanguage('es')">
+                            <span class="language-option-flag"> 🇪🇸 </span>
+                            <span> Español </span>
+                            <svg v-if="locale === 'es'" class="language-check" width="13" height="13"
+                                viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12L10 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- <button type="button" class="mobile-login-btn" aria-label="Login">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.7" />
+
+                        <path d="M20 21C20 16.5817 16.4183 13 12 13C7.58172 13 4 16.4183 4 21" stroke="currentColor"
+                            stroke-width="1.7" stroke-linecap="round" />
+                    </svg>
+                </button> -->
+                <button class="hamburger" :class="{ open: menuOpen }" @click.stop="toggleMobile"
+                    aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-        <!-- MOBILE MENU -->
         <div class="mobile-menu" :class="{ open: menuOpen }">
             <ul>
                 <li>
-                    <router-link to="/" @click="closeMobile"> {{ $t("navbar.home") }} </router-link>
+                    <router-link to="/" @click="closeMobile">
+                        {{ $t("navbar.home") }}
+                    </router-link>
                 </li>
                 <li>
                     <router-link to="/coffees" @click="closeMobile">
@@ -112,8 +230,8 @@ onUnmounted(() => {
                     </router-link>
                 </li>
                 <li>
-                    <router-link to="/new-releases" @click="closeMobile">
-                        {{ $t("navbar.blog") }}    
+                    <router-link to="/blog" @click="closeMobile">
+                        {{ $t("navbar.blog") }}
                     </router-link>
                 </li>
                 <li>
@@ -122,7 +240,9 @@ onUnmounted(() => {
                     </router-link>
                 </li>
                 <li>
-                    <router-link to="/about" @click="closeMobile"> {{ $t("navbar.about") }} </router-link>
+                    <router-link to="/about" @click="closeMobile">
+                        {{ $t("navbar.about") }}
+                    </router-link>
                 </li>
                 <li>
                     <router-link to="/contact" @click="closeMobile">
@@ -138,7 +258,6 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
-/* NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
@@ -223,26 +342,189 @@ onUnmounted(() => {
     flex-shrink: 0;
 }
 
-.lang-btn {
+.language-wrapper {
+    position: relative;
+}
+
+.language-btn {
+    height: 34px;
     display: flex;
     align-items: center;
-    gap: 4px;
+    justify-content: center;
+    gap: 7px;
+    padding: 0 11px;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.16);
-    color: var(--white);
-    font-size: 11px;
-    font-weight: 600;
-    padding: 6px 10px;
     border-radius: var(--r-sm);
+    color: var(--white);
+    font-family: inherit;
     cursor: pointer;
-    transition: background var(--tr);
+    transition:
+        background var(--tr),
+        border-color var(--tr);
 }
 
-.lang-btn:hover {
-    background: rgba(255, 255, 255, 0.18);
+.language-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.28);
 }
 
-/* HAMBURGER */
+.language-flag {
+    font-size: 15px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.language-code {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.language-chevron {
+    opacity: 0.75;
+    transition: transform 0.25s ease;
+}
+
+.language-chevron.open {
+    transform: rotate(180deg);
+}
+
+.language-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 145px;
+    padding: 6px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+    z-index: 500;
+    animation: languageDropdown 0.18s ease-out;
+}
+
+@keyframes languageDropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.language-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 10px;
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 11px;
+    text-align: left;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.language-option:hover {
+    background: var(--ivory-d);
+    color: var(--gold);
+}
+
+.language-option.selected {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+.language-option-flag {
+    font-size: 15px;
+    line-height: 1;
+}
+
+.language-check {
+    margin-left: auto;
+    color: var(--gold);
+}
+
+.login-btn {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 0 13px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: var(--r-sm);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition:
+        background var(--tr),
+        border-color var(--tr),
+        transform var(--tr);
+}
+
+.login-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.28);
+    transform: translateY(-1px);
+}
+
+.login-icon {
+    flex-shrink: 0;
+    opacity: 0.9;
+    transition: transform var(--tr);
+}
+
+.login-btn:hover .login-icon {
+    transform: translateY(-1px);
+}
+
+.mobile-actions {
+    display: none;
+    align-items: center;
+    gap: 9px;
+    margin-left: auto;
+}
+
+.mobile-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: var(--r-sm);
+    color: var(--white);
+    cursor: pointer;
+    transition:
+        background var(--tr),
+        border-color var(--tr),
+        transform var(--tr);
+}
+
+.mobile-login-btn:hover {
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.28);
+    transform: translateY(-1px);
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -251,7 +533,7 @@ onUnmounted(() => {
     border: none;
     cursor: pointer;
     padding: 4px;
-    margin-left: auto;
+    margin-left: 0;
 }
 
 .hamburger span {
@@ -275,7 +557,6 @@ onUnmounted(() => {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* MOBILE MENU */
 .mobile-menu {
     display: none;
     flex-direction: column;
@@ -316,6 +597,10 @@ onUnmounted(() => {
         display: none;
     }
 
+    .mobile-actions {
+        display: flex;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -331,6 +616,12 @@ onUnmounted(() => {
     .mobile-menu.open {
         display: flex;
     }
+
+    .mobile-language-dropdown {
+        right: 0;
+
+        left: auto;
+    }
 }
 
 @media (max-width: 600px) {
@@ -342,13 +633,40 @@ onUnmounted(() => {
         height: 48px;
     }
 
+    .mobile-actions {
+        gap: 6px;
+    }
+
+    .mobile-login-btn {
+        width: 32px;
+
+        height: 32px;
+    }
+
     .mobile-menu {
         padding: 14px 20px 22px;
     }
 
     .mobile-menu li a {
         padding: 13px 0;
+
         font-size: 14px;
+    }
+
+    .language-btn {
+        height: 32px;
+
+        padding: 0 8px;
+
+        gap: 5px;
+    }
+
+    .language-flag {
+        font-size: 14px;
+    }
+
+    .language-code {
+        font-size: 9px;
     }
 }
 </style>

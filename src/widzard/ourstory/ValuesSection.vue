@@ -1,27 +1,61 @@
 <template>
-<section class="why-section">
-  <div class="why-bg"></div>
-  <div class="container why-inner">
-    <div class="why-header">
-      <span class="eyebrow gold">What Drives Us</span>
-      <h2 class="section-title light">Values we<br>don't <em>compromise.</em></h2>
+  <section class="why-section">
+    <div class="why-bg"></div>
+    <div class="container why-inner">
+      <div class="why-header">
+        <span class="eyebrow gold">What Drives Us</span>
+        <h2 class="section-title light">Values we<br>don't <em>compromise.</em></h2>
+      </div>
+      <div class="why-pillars">
+        <div class="pillar">
+          <div class="pillar-icon"><svg viewBox="0 0 50 50" width="26" height="26">
+              <path
+                d="M25 10C20 10 12 15 12 25C12 30 15 32 18 33C17 36 17 40 17 40H33C33 40 33 36 32 33C35 32 38 30 38 25C38 15 30 10 25 10Z"
+                fill="none" stroke="#C8A85A" stroke-width="2" />
+            </svg></div>
+          <h3>Sustainable</h3>
+          <p>We work directly with farming communities, promoting sustainable practices and environmental care.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"><svg viewBox="0 0 50 50" width="26" height="26">
+              <circle cx="25" cy="18" r="8" fill="none" stroke="#C8A85A" stroke-width="2" />
+              <path d="M10 40C10 32 17 26 25 26C33 26 40 32 40 40" fill="none" stroke="#C8A85A" stroke-width="2" />
+            </svg></div>
+          <h3>Transparent</h3>
+          <p>Full traceability and direct relationships ensure fairness and trust in every step of the process.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"><svg viewBox="0 0 50 50" width="26" height="26">
+              <path d="M10 28C10 22 14 16 25 16C30 16 38 18 38 28C38 32 35 38 35 38H15C15 38 10 34 10 28Z" fill="none"
+                stroke="#C8A85A" stroke-width="2" />
+              <path d="M18 38V42M32 38V42" stroke="#C8A85A" stroke-width="2" stroke-linecap="round" />
+            </svg></div>
+          <h3>Exceptional</h3>
+          <p>Rigorous selection and quality control to deliver outstanding coffees with unique profiles.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 50 50" width="26" height="26">
+              <!-- Persona central -->
+              <circle cx="25" cy="16" r="5" fill="none" stroke="#C8A85A" stroke-width="2" />
+              <path d="M16 36C16 29.5 19.5 25 25 25C30.5 25 34 29.5 34 36" fill="none" stroke="#C8A85A" stroke-width="2"
+                stroke-linecap="round" />
+              <!-- Persona izquierda -->
+              <circle cx="13" cy="20" r="4" fill="none" stroke="#C8A85A" stroke-width="2" />
+              <path d="M5 36C5.5 30.5 8 27 13 27" fill="none" stroke="#C8A85A" stroke-width="2"
+                stroke-linecap="round" />
+              <!-- Persona derecha -->
+              <circle cx="37" cy="20" r="4" fill="none" stroke="#C8A85A" stroke-width="2" />  
+              <path d="M45 36C44.5 30.5 42 27 37 27" fill="none" stroke="#C8A85A" stroke-width="2"
+                stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>COMMUNITY</h3>
+          <p>Building lasting bonds wiht producers and communities that grow together with every harvest.</p>
+        </div>
+      </div>
     </div>
-    <div class="why-pillars">
-      <div class="pillar">
-        <div class="pillar-icon"><svg viewBox="0 0 50 50" width="26" height="26"><path d="M25 10C20 10 12 15 12 25C12 30 15 32 18 33C17 36 17 40 17 40H33C33 40 33 36 32 33C35 32 38 30 38 25C38 15 30 10 25 10Z" fill="none" stroke="#C8A85A" stroke-width="2"/></svg></div>
-        <h3>Sustainable</h3><p>We work directly with farming communities, promoting sustainable practices and environmental care.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-icon"><svg viewBox="0 0 50 50" width="26" height="26"><circle cx="25" cy="18" r="8" fill="none" stroke="#C8A85A" stroke-width="2"/><path d="M10 40C10 32 17 26 25 26C33 26 40 32 40 40" fill="none" stroke="#C8A85A" stroke-width="2"/></svg></div>
-        <h3>Transparent</h3><p>Full traceability and direct relationships ensure fairness and trust in every step of the process.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-icon"><svg viewBox="0 0 50 50" width="26" height="26"><path d="M10 28C10 22 14 16 25 16C30 16 38 18 38 28C38 32 35 38 35 38H15C15 38 10 34 10 28Z" fill="none" stroke="#C8A85A" stroke-width="2"/><path d="M18 38V42M32 38V42" stroke="#C8A85A" stroke-width="2" stroke-linecap="round"/></svg></div>
-        <h3>Exceptional</h3><p>Rigorous selection and quality control to deliver outstanding coffees with unique profiles.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 </template>
 
 <style>

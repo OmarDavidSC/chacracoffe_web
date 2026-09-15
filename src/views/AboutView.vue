@@ -10,6 +10,7 @@ import OurProcessingSection from '../widzard/about/OurProcessingSection.vue';
 import HowItWorksSection from '../widzard/about/HowItWorksSection.vue';
 import StatsSection from '../widzard/about/StatsSection.vue';
 import InsideThePlantSection from '../widzard/about/InsideThePlantSection.vue';
+import CtaAboutSection from '../widzard/about/CtaAboutSection.vue';
 </script>
 
 <template>
@@ -22,5 +23,6 @@ import InsideThePlantSection from '../widzard/about/InsideThePlantSection.vue';
     <OurProcessingSection />
     <StatsSection />
     <HowItWorksSection />
-    <InsideThePlantSection />>
+    <InsideThePlantSection />
+    <CtaAboutSection />
 </template>

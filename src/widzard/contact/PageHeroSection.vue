@@ -21,7 +21,7 @@
 .contact-hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('Fondo_3.jpg');
+  /* background-image: url('Fondo_3.jpg'); */
   background-size: cover;
   background-position: center;
   opacity: .2;

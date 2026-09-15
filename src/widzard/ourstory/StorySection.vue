@@ -1,19 +1,24 @@
 <template>
-<section class="history-section">
-  <div class="container history-grid">
-    <div class="history-text">
-      <span class="eyebrow gold">How We Started</span>
-      <h2 class="section-title">From one farm<br>to <em>twenty communities.</em></h2>
-      <p>Chacra Coffee began as a small family operation in Jaén, Cajamarca, where coffee has been grown for generations. What started as a single hectare of Typica and Bourbon trees grew, over a decade, into a network of relationships with more than 100 producers across six origin zones in Northern Peru.</p>
-      <p>The name "Chacra" — a Quechua word for a small family-run farm — reflects what still drives the business today: direct, long-term relationships with the people who grow the coffee, built on fair pricing, shared knowledge and mutual trust.</p>
-      <p>Today, Chacra Coffee exports specialty-grade green coffee to roasters across the UK and Europe, with full traceability from farm to cup and a growing portfolio of award-winning microlots.</p>
+  <section class="history-section">
+    <div class="container history-grid">
+      <div class="history-text">
+        <span class="eyebrow gold">How We Started</span>
+        <h2 class="section-title">From one farm<br>to <em>twenty communities.</em></h2>
+        <p>Chacra Coffee began as a small family operation in Jaén, Cajamarca, where coffee has been grown for
+          generations. What started as a single hectare of Typica and Bourbon trees grew, over a decade, into a network
+          of relationships with more than 100 producers across six origin zones in Northern Peru.</p>
+        <p>The name "Chacra" — a Quechua word for a small family-run farm — reflects what still drives the business
+          today: direct, long-term relationships with the people who grow the coffee, built on fair pricing, shared
+          knowledge and mutual trust.</p>
+        <p>Today, Chacra Coffee exports specialty-grade green coffee to roasters across the UK and Europe, with full
+          traceability from farm to cup and a growing portfolio of award-winning microlots.</p>
+      </div>
+      <div class="history-photos">
+        <div class="hp-main" style="background-image:url('/public/img/coffeestory/Fondo_1.jpg')"></div>
+        <div class="hp-sub" style="background-image:url('/public/img/coffeestory/Las_Etiopes.JPG')"></div>
+      </div>
     </div>
-    <div class="history-photos">
-      <div class="hp-main" style="background-image:url('/public/img/coffeestory/Fondo_1.jpg')"></div>
-      <div class="hp-sub" style="background-image:url('/public/img/coffeestory/Las_Etiopes.JPG')"></div>
-    </div>
-  </div>
-</section>
+  </section>
 </template>
 
 <style>

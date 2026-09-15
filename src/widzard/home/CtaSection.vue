@@ -5,7 +5,9 @@
             <div class="cta-pill">Looking for Specialty Coffee?</div>
             <h2 class="cta-title">We would love to<br>work with you.</h2>
             <p class="cta-sub">Request our current offer list or get in touch — we ship to UK, Europe and beyond.</p>
-            <div class="cta-btns"><a href="Contact.html" class="btn btn-ghost">Contact Us</a></div>
+            <div class="cta-btns">
+                <router-link to="/contact" class="btn btn-ghost"> Contact Us </router-link>
+            </div>
         </div>
     </section>
 </template>

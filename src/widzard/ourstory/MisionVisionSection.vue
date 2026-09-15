@@ -30,7 +30,7 @@
 .mv-bg {
   position: absolute;
   inset: 0;
-  background-image: url('Fondo_3.jpg');
+  background-image: url('../../../public/img/coffee/Fondo_2.jpg');
   background-size: cover;
   background-position: center;
   filter: brightness(.2) saturate(.6);
