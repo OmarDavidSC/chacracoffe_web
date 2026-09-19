@@ -126,14 +126,18 @@ onUnmounted(() => {
                             </div>
                             <div class="cc-body">
                                 <div class="cc-tags">
-                                    <span class="cc-tag"> Washed </span>
-                                    <span class="cc-tag"> Natural </span>
+                                    <span class="cc-tag"> WASHED </span>
+                                    <span class="cc-tag"> NATURAL </span>
+                                    <span class="cc-tag"> HONEY </span>
                                     <span class="cc-tag gold-tag"> 83-86 pts </span>
                                 </div>
                                 <h3 class="cc-title">Regional Blends</h3>
                                 <p class="cc-desc">
-                                    Balanced and consistent profiles from different origins. Ideal
-                                    for espresso and filter roasting.
+                                    While a microlot offers the rarity of a single farm. our Regional Blends offer the
+                                    identify of
+                                    an entire region. These ara consistent, everyday coffees that maintain stable flavor
+                                    notes year-round,
+                                    thanks to the collective effort of our community.
                                 </p>
 
                                 <router-link to="/offer" class="cc-link">
@@ -153,14 +157,18 @@ onUnmounted(() => {
                             </div>
                             <div class="cc-body">
                                 <div class="cc-tags">
-                                    <span class="cc-tag"> Washed </span>
-                                    <span class="cc-tag"> Natural </span>
+                                    <span class="cc-tag"> WASHED </span>
+                                    <span class="cc-tag"> NATURAL </span>
+                                    <span class="cc-tag"> HONEY </span>
                                     <span class="cc-tag gold-tag"> 86-90+ pts </span>
                                 </div>
                                 <h3 class="cc-title">Microlots</h3>
                                 <p class="cc-desc">
-                                    Unique and exclusive lots with exceptional cup scores,
-                                    traceable to single farms in Jaén, San Ignacio and Cutervo.
+                                    A microlot is coffee select from a single farm, grown under ideal conditions, and
+                                    meticulously processed
+                                    separately from the rest of the harvest. The result is a clean cup with guaranteed
+                                    traceability and
+                                    distinctive flavor notes that represent the best of its origin.
                                 </p>
                                 <router-link to="/offer" class="cc-link">
                                     View Offer List
@@ -179,14 +187,17 @@ onUnmounted(() => {
                             </div>
                             <div class="cc-body">
                                 <div class="cc-tags">
-                                    <span class="cc-tag"> Anaerobic </span>
-                                    <span class="cc-tag"> Fermentation </span>
+                                    <span class="cc-tag"> WASHED </span>
+                                    <span class="cc-tag"> NATURAL </span>
+                                    <span class="cc-tag"> HONEY </span>
                                     <span class="cc-tag gold-tag"> 86-90+ pts </span>
                                 </div>
-                                <h3 class="cc-title">Experimental Lots</h3>
+                                <h3 class="cc-title">Nano Lots</h3>
                                 <p class="cc-desc">
-                                    Special fermentations and innovative processes that push the
-                                    boundaries of flavour and complexity.
+                                    The art of coffee in its purest, most concentrated form. Nano-lots are botanical gems hidden within
+                                    the harvest-micro-batches treated with unique fermentation processes and meticulous care.
+                                    You aren't just drinking specialty coffee; you are experiencing a limited edition of a producer's 
+                                    dedicated effort.
                                 </p>
                                 <router-link to="/offer" class="cc-link">
                                     View Offer List
