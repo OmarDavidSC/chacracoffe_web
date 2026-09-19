@@ -1,23 +1,22 @@
 <template>
-<section class="cta-section">
-      <div class="cta-bg"></div>
-      <div class="cta-inner">
-        <div class="cta-pill">Want the Full Offer List?</div>
-        <h2 class="cta-title">
-          Request our current<br />price list &amp; samples.
-        </h2>
-        <p class="cta-sub">
-          We update our offer list monthly with fresh crop arrivals from each
-          origin. Get in touch for pricing, MOQs and shipping terms.
-        </p>
-        <div class="cta-btns">
-          <a href="Contact.html" class="btn btn-gold">Request Offer List</a
-          ><a href="Contact.html" class="btn btn-ghost">Contact Us</a>
-        </div>
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="cta-inner">
+      <div class="cta-pill">Want the Full Offer List?</div>
+      <h2 class="cta-title">
+        Request our current<br />price list &amp; samples.
+      </h2>
+      <p class="cta-sub">
+        We update our offer list monthly with fresh crop arrivals from each
+        origin. Get in touch for pricing, MOQs and shipping terms.
+      </p>
+      <div class="cta-btns">
+        <router-link to="/offer" class="btn btn-ghost"> Request Offer List </router-link>
+        <router-link to="/contact" class="btn btn-gold"> Contact Us </router-link>
       </div>
-    </section>
+    </div>
+  </section>
 </template>
-
 
 <style>
 .cta-section {
@@ -29,16 +28,18 @@
 .cta-bg {
   position: absolute;
   inset: 0;
-  background-image: url('../img/Fondo_1.jpg');
+  background-image: url("../img/Fondo_1.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .cta-bg::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(18, 36, 24, .9), rgba(26, 48, 38, .95));
+  background: linear-gradient(to bottom,
+      rgba(18, 36, 24, 0.9),
+      rgba(26, 48, 38, 0.95));
 }
 
 .cta-inner {
@@ -54,11 +55,11 @@
 .cta-pill {
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
-  background: rgba(200, 168, 90, .1);
-  border: 1px solid rgba(200, 168, 90, .22);
+  background: rgba(200, 168, 90, 0.1);
+  border: 1px solid rgba(200, 168, 90, 0.22);
   padding: 6px 16px;
   border-radius: 20px;
 }
@@ -73,7 +74,7 @@
 
 .cta-sub {
   font-size: 14px;
-  color: rgba(255, 255, 255, .48);
+  color: rgba(255, 255, 255, 0.48);
   max-width: 420px;
   line-height: 1.75;
 }
