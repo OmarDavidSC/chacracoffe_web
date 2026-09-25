@@ -9,30 +9,24 @@
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Sustainability</a></li>
-            <li><a href="#">Careers</a></li>
+            <li><router-link to="/home">Home</router-link></li>
+            <li><router-link to="/ourstory">Our Story</router-link></li>
+            <li><router-link to="/about">About Us</router-link></li>
+            <li><router-link to="/offer">Offer List</router-link></li>
+            <li><router-link to="/blog">Blog</router-link></li>
+            <li><router-link to="/contact">Contact</router-link></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Coffees</h4>
           <ul>
-            <li><a href="#">Regional Blends</a></li>
-            <li><a href="#">Microlots</a></li>
-            <li><a href="#">Experimental Lots</a></li>
-            <li><a href="#">Offer List</a></li>
+            <li><RouterLink to="/offer">Regional Blends</RouterLink></li>
+            <li><RouterLink to="/offer">Microlots</RouterLink></li>
+            <li><RouterLink to="/offer">Experimental Lots</RouterLink></li>
+            <li><RouterLink to="/offer">Offer List</RouterLink></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Resources</h4>
-          <ul>
-            <li><a href="#">Quality Control</a></li>
-            <li><a href="#">Traceability</a></li>
-            <li><a href="#">Shipping &amp; Logistics</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
-        </div>
+        
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
