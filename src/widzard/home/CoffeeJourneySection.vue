@@ -81,7 +81,7 @@ onMounted(() => {
                 <!-- 03 -->
                 <div class="jstep">
                     <div class="jstep-img" style="
-                            background-image: url('../../public/img/journey/Processing.jpg');
+                            background-image: url('../../public/img/journey/Processing.JPG');
                         "></div>
 
                     <div class="jstep-lbl">
@@ -93,7 +93,7 @@ onMounted(() => {
                 <!-- 04 -->
                 <div class="jstep">
                     <div class="jstep-img" style="
-                            background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80');
+                            background-image: url('../../public/img/journey/Cupping.JPG');
                         "></div>
 
                     <div class="jstep-lbl">

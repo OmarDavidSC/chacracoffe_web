@@ -14,8 +14,8 @@
           traceability from farm to cup and a growing portfolio of award-winning microlots.</p>
       </div>
       <div class="history-photos">
-        <div class="hp-main" style="background-image:url('/public/img/coffeestory/Fondo_1.jpg')"></div>
-        <div class="hp-sub" style="background-image:url('/public/img/coffeestory/Las_Etiopes.JPG')"></div>
+        <div class="hp-main" style="background-image:url('/public/img/coffeestory/Story2.jpg')"></div>
+        <div class="hp-sub" style="background-image:url('/public/img/coffeestory/Story.jpg')"></div>
       </div>
     </div>
   </section>
@@ -68,9 +68,9 @@
   bottom: 0;
   right: 0;
   width: 56%;
-  height: 50%;
+  height: 60%;
   background-size: cover;
-  background-position: center top;
+  background-position: center 60%;
   border-radius: var(--r-md);
   box-shadow: var(--sh-md);
   border: 6px solid var(--ivory);

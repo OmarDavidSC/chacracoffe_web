@@ -6,19 +6,19 @@
                 <h2>A closer <em>look.</em></h2>
             </div>
             <div class="ab-gallery-grid">
-                <div class="g-item" style="background-image:url('/img/productores/andyllanos.jpg')">
+                <div class="g-item" style="background-image:url('/img/insidetheplant/PLanta_01.jpg')">
                     <span class="g-caption">Chacra Plant</span>
                 </div>
-                <div class="g-item" style="background-image:url('/img/insidetheplant/Export.jpg')">
+                <div class="g-item" style="background-image:url('/img/insidetheplant/TRITE.jpg')">
                     <span class="g-caption">Trite</span>
                 </div>
-                <div class="g-item" style="background-image:url('/img/productores/francohuaches.jpg')">
+                <div class="g-item" style="background-image:url('/img/insidetheplant/Sorting.jpg')">
                     <span class="g-caption">Sorting</span>
                 </div>
-                <div class="g-item" style="background-image:url('/img/insidetheplant/Cafe_1.png')">
+                <div class="g-item" style="background-image:url('/img/insidetheplant/Almacenamiento.jpg')">
                     <span class="g-caption">Storage</span>
                 </div>
-                <div class="g-item" style="background-image:url('/img/insidetheplant/Experimental.jpg')">
+                <div class="g-item" style="background-image:url('/img/insidetheplant/Quality_Lab.jpg')">
                     <span class="g-caption">Quality Lab</span>
                 </div>
             </div>
