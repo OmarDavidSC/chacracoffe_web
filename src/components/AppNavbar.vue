@@ -5,6 +5,7 @@ import { useI18n } from "vue-i18n";
 const { locale } = useI18n();
 
 const ukFlag = "/img/flags/Flag_of_the_United_Kingdom_(3-5).svg";
+const esFlag = "/img/flags/Flag_of_Spain_(civil).svg";
 
 const menuOpen = ref(false);
 const languageOpen = ref(false);
@@ -105,7 +106,7 @@ onUnmounted(() => {
                 <div class="language-wrapper">
                     <button type="button" class="language-btn" @click.stop="toggleLanguage">
                         <span class="language-flag">
-                            <span v-if="locale === 'es'">🇪🇸</span>
+                            <img v-if="locale === 'es'" :src="esFlag" alt="España" />
                             <img v-else :src="ukFlag" alt="United Kingdom" />
                         </span>
                         <span class="language-code">
@@ -140,7 +141,9 @@ onUnmounted(() => {
                         <button type="button" class="language-option" :class="{
                             selected: locale === 'es',
                         }" @click="changeLanguage('es')">
-                            <span class="language-option-flag"> 🇪🇸 </span>
+                            <span class="language-option-flag">
+                                <img :src="esFlag" alt="España" />
+                            </span>
 
                             <span> Español </span>
                             <svg v-if="locale === 'es'" class="language-check" width="13" height="13"
@@ -167,7 +170,7 @@ onUnmounted(() => {
                 <div class="language-wrapper mobile-language">
                     <button type="button" class="language-btn" @click.stop="toggleLanguage">
                         <span class="language-flag">
-                            <span v-if="locale === 'es'">🇪🇸</span>
+                            <img v-if="locale === 'es'" :src="esFlag" alt="España" />
                             <img v-else :src="ukFlag" alt="United Kingdom" />
                         </span>
 
@@ -199,7 +202,9 @@ onUnmounted(() => {
                         <button type="button" class="language-option" :class="{
                             selected: locale === 'es',
                         }" @click="changeLanguage('es')">
-                            <span class="language-option-flag"> 🇪🇸 </span>
+                            <span class="language-option-flag">
+                                <img :src="esFlag" alt="España" />
+                            </span>
                             <span> Español </span>
                             <svg v-if="locale === 'es'" class="language-check" width="13" height="13"
                                 viewBox="0 0 24 24" fill="none">
