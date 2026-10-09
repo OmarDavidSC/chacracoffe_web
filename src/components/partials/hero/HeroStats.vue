@@ -78,7 +78,7 @@ onUnmounted(() => {
                         stroke-width="1.8" />
                 </svg>
                 <span class="stat-num"> {{ communities }}+ </span>
-                <span class="stat-label"> Communities </span>
+                <span class="stat-label"> {{ $t('stats.communities') }} </span>
             </div>
             <!-- PRODUCERS -->
             <div class="stat-item">
@@ -87,7 +87,7 @@ onUnmounted(() => {
                     <path d="M20 24V34M14 34H26" stroke="#C8A85A" stroke-width="1.8" stroke-linecap="round" />
                 </svg>
                 <span class="stat-num"> {{ producers }}+ </span>
-                <span class="stat-label"> Producers </span>
+                <span class="stat-label"> {{ $t('stats.producers') }} </span>
             </div>
             <!-- CUP SCORE -->
             <div class="stat-item">
@@ -98,7 +98,7 @@ onUnmounted(() => {
                         stroke-width="1.8" />
                 </svg>
                 <span class="stat-num"> {{ cupScore }}+ </span>
-                <span class="stat-label"> Cup Score </span>
+                <span class="stat-label"> {{ $t('stats.cupScore') }} </span>
             </div>
             <!-- STOCK -->
             <div class="stat-item">
@@ -108,7 +108,7 @@ onUnmounted(() => {
                         fill="none" stroke="#C8A85A" stroke-width="1.5" />
                 </svg>
                 <span class="stat-num stat-stock"> UK &amp; EU </span>
-                <span class="stat-label"> Stock Available </span>
+                <span class="stat-label"> {{ $t('stats.stockAvailable') }} </span>
             </div>
         </div>
     </section>

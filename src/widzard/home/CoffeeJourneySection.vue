@@ -43,11 +43,11 @@ onMounted(() => {
 
             <!-- HEADER -->
             <div class="journey-header">
-                <span class="eyebrow gold">Coffee Journey</span>
+                <span class="eyebrow gold">{{ $t('journey.badge') }}</span>
 
                 <h2 class="section-title">
-                    From <em>our farms</em><br />
-                    to your cup.
+                    {{ $t('journey.h2') }} <em>{{ $t('journey.br') }}</em><br />
+                    {{ $t('journey.br2') }}
                 </h2>
             </div>
 
@@ -62,7 +62,7 @@ onMounted(() => {
 
                     <div class="jstep-lbl">
                         <span class="jstep-n">01</span>
-                        <span class="jstep-t">Cultivation</span>
+                        <span class="jstep-t">{{ $t('journey.cultivation') }}</span>
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@ onMounted(() => {
 
                     <div class="jstep-lbl">
                         <span class="jstep-n">02</span>
-                        <span class="jstep-t">Harvest</span>
+                        <span class="jstep-t">{{ $t('journey.harvest') }}</span>
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@ onMounted(() => {
 
                     <div class="jstep-lbl">
                         <span class="jstep-n">03</span>
-                        <span class="jstep-t">Processing</span>
+                        <span class="jstep-t">{{ $t('journey.processing') }}</span>
                     </div>
                 </div>
 
@@ -98,7 +98,7 @@ onMounted(() => {
 
                     <div class="jstep-lbl">
                         <span class="jstep-n">04</span>
-                        <span class="jstep-t">Cupping</span>
+                        <span class="jstep-t">{{ $t('journey.cupping') }}</span>
                     </div>
                 </div>
 
@@ -110,7 +110,7 @@ onMounted(() => {
 
                     <div class="jstep-lbl">
                         <span class="jstep-n">05</span>
-                        <span class="jstep-t">Export</span>
+                        <span class="jstep-t">{{ $t('journey.export') }}</span>
                     </div>
                 </div>
 

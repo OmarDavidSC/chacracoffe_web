@@ -1,3 +1,8 @@
+import about from "./ingles/about";
+import home from "./ingles/home";
+import offer from "./ingles/offer";
+import story from "./ingles/story";
+
 export default {
     navbar : {
         home: 'Home',
@@ -9,10 +14,10 @@ export default {
         requestSamples: 'Request Sample',
         login: 'Login',        
     },
-    home: {
-        title: 'Chacra Coffee',
-        subscribe: 'From the farms to the world.'
-    },
+    ...home,
+    ...story,
+    ...about,
+    ...offer,
     footer: {
         rights: 'All rights reserved.',
     }

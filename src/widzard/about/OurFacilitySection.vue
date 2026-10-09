@@ -7,30 +7,27 @@
                     <div class="ab-img-main" style="background-image: url(&quot;/img/about/Processing.jpg&quot;)">
                         <div class="ab-img-badge" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="700"
                             data-aos-once="true">
-                            <strong>From Cherry</strong>
-                            to Green Coffee
+                            <strong>{{ $t('facility.strong') }}</strong>
+                            {{ $t('green') }}
                         </div>
                     </div>
                 </div>
 
                 <!-- CONTENIDO -->
                 <div class="ab-who-text" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
-                    <span class="eyebrow gold">Our Facility</span>
+                    <span class="eyebrow gold">{{ $t('facility.pill') }}</span>
 
                     <h2 class="section-title">
-                        One plant.<br />
-                        <em>Every process.</em>
+                        {{ $t('facility.t1') }}<br />
+                        <em>{{ $t('facility.em') }}</em>
                     </h2>
 
                     <p>
-                        Our own processing plant in Jaén handles washing, drying and sorting
-                        for every lot we export — full control from cherry to green coffee.
+                        {{ $t('facility.d1') }}
                     </p>
 
                     <p>
-                        Located at Calle Las Tres Marías, Jaén, Cajamarca (next to
-                        Prosegur), our facility tailors each method to bring out the best of
-                        every microlot.
+                        {{ $t('facility.d2') }}
                     </p>
 
                     <!-- PROCESOS -->
@@ -46,7 +43,7 @@
                                     stroke-width="2" />
                             </svg>
 
-                            <span>Washed</span>
+                            <span>{{ $t('facility.s1') }}</span>
                         </div>
 
                         <div class="ab-process-item" data-aos="fade-up" data-aos-delay="350" data-aos-duration="700"
@@ -60,7 +57,7 @@
                                     stroke-width="2" />
                             </svg>
 
-                            <span>Honey</span>
+                            <span>{{ $t('facility.s2') }}</span>
                         </div>
 
                         <div class="ab-process-item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
@@ -80,7 +77,7 @@
                                     stroke-width="1.5" />
                             </svg>
 
-                            <span>Natural</span>
+                            <span>{{ $t('facility.s3') }}</span>
                         </div>
                     </div>
 
@@ -91,22 +88,22 @@
                             <span class="ab-contact-line"></span>
 
                             <div>
-                                <span class="ab-contact-label"> Get in touch </span>
+                                <span class="ab-contact-label">{{ $t('facility.label') }}</span>
 
-                                <h3>Let's talk about coffee.</h3>
+                                <h3>{{ $t('facility.h3') }}</h3>
                             </div>
                         </div>
 
                         <form class="ab-contact-form" @submit.prevent="sendMessage">
                             <div class="ab-form-row">
                                 <div class="ab-form-group">
-                                    <label for="name"> Name </label>
+                                    <label for="name"> {{ $t('facility.name') }} </label>
 
                                     <input id="name" v-model="form.name" type="text" placeholder="Your name" required />
                                 </div>
 
                                 <div class="ab-form-group">
-                                    <label for="email"> Email </label>
+                                    <label for="email"> {{ $t('facility.email') }} </label>
 
                                     <input id="email" v-model="form.email" type="email" placeholder="your@email.com"
                                         required />
@@ -114,14 +111,14 @@
                             </div>
 
                             <div class="ab-form-group">
-                                <label for="subject"> Subject </label>
+                                <label for="subject"> {{ $t('facility.subject') }} </label>
 
                                 <input id="subject" v-model="form.subject" type="text" placeholder="How can we help?"
                                     required />
                             </div>
 
                             <div class="ab-form-group">
-                                <label for="message"> Message </label>
+                                <label for="message"> {{ $t('facility.message') }} </label>
 
                                 <textarea id="message" v-model="form.message" rows="4"
                                     placeholder="Tell us about your request..." required></textarea>
@@ -137,7 +134,7 @@
                         </form>
 
                         <div class="ab-direct-contact">
-                            <span>Or contact us directly</span>
+                            <span>{{ $t('facility.note') }}</span>
 
                             <a href="mailto:bryanzc@chacracoffee.com">
                                 bryanzc@chacracoffee.com

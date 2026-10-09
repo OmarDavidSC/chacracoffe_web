@@ -5,13 +5,13 @@
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <span class="hero-eyebrow">Specialty Coffee from Peru</span>
+            <span class="hero-eyebrow">{{ $t('home.badge') }}</span>
             <h1 class="hero-title">CHACRA<br>COFFEE</h1>
-            <p class="hero-tagline">From the farms to the world.
+            <p class="hero-tagline">{{ $t('home.subscribe') }}
             </p>
             <div class="hero-btns">
-                <router-link to="/offer" class="btn btn-ghost"> View Current Offer List </router-link>
-                <router-link to="/contact" class="btn btn-gold"> Request Samples </router-link>
+                <router-link to="/offer" class="btn btn-ghost"> {{ $t('home.offerList') }} </router-link>
+                <router-link to="/contact" class="btn btn-gold"> {{ $t('home.requestSamples') }} </router-link>
             </div>
         </div>
     </section>

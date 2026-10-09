@@ -88,18 +88,16 @@ onUnmounted(() => {
         <div class="container">
             <div class="producers-layout">
                 <div class="prod-text">
-                    <span class="eyebrow gold"> Our Producers </span>
+                    <span class="eyebrow gold"> {{ $t('producers.badge') }} </span>
                     <h2 class="section-title">
-                        The
-                        <em> heart of<br> our coffee. </em>
+                        {{ $t('producers.h2') }}
+                        <em> {{ $t('producers.br') }}<br> {{ $t('producers.br2') }} </em>
                     </h2>
                     <p>
-                        We build long-term relationships with producers
-                        who share our passion for quality and sustainability.
+                        {{ $t('producers.relationshipDescription') }}
                     </p>
                     <p>
-                        Each producer we work with is a vital part of our
-                        story, and we are proud to share their stories
+                        {{ $t('producers.storyDescription') }}
                         with you.
                     </p>
                 </div>

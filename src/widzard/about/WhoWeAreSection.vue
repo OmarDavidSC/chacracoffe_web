@@ -8,32 +8,25 @@
           <div class="ab-img-accent" style="background-image: url(&quot;/img/about/Processing.jpg&quot;)"></div>
           <div class="ab-img-tag">
             <span class="ab-tag-num">2023</span>
-            <span class="ab-tag-lbl">Founded in Jaén</span>
+            <span class="ab-tag-lbl">{{ $t('who.lbl') }}</span>
           </div>
         </div>
         <!-- TEXT BLOCK -->
         <div class="ab-who-text" :class="{ 'is-visible': isVisible }">
-          <span class="eyebrow gold ab-eyebrow"> Who We Are </span>
+          <span class="eyebrow gold ab-eyebrow"> {{ $t('who.pill') }} </span>
           <h2 class="section-title ab-title">
-            A company rooted<br />
-            <em>in the highlands.</em>
+            {{ $t('who.h2') }}<br />
+            <em>{{ $t('who.em') }}</em>
           </h2>
           <p class="ab-paragraph">
-            Chacra Coffee was born in Jaén, one of Peru's most celebrated
-            coffee-growing regions. We are a specialty green coffee exporter
-            that sources, processes and exports traceable lots from smallholder
-            farmers across Cajamarca — to roasters and importers in the United
-            Kingdom, Europe and beyond.
+            {{ $t('who.d1') }}
           </p>
-          <p class="ab-paragraph">
-            The name <em>Chacra</em> comes from the Quechua word for
-            <em>farm</em> or <em>field</em> — a reflection of our roots and the
-            farmers at the heart of everything we do.
+          <p class="ab-paragraph" v-html="$t('who.d2')">
           </p>
           <div class="ab-who-tags">
-            <span class="ab-pill"> 🌿 Specialty Grade </span>
-            <span class="ab-pill"> 📍 Traceable Lots </span>
-            <span class="ab-pill"> 🤝 Direct Trade </span>
+            <span class="ab-pill"> 🌿 {{ $t('who.p1') }} </span>
+            <span class="ab-pill"> 📍 {{ $t('who.p2') }} </span>
+            <span class="ab-pill"> 🤝 {{ $t('who.p3') }} </span>
           </div>
         </div>
       </div>

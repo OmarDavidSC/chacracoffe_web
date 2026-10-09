@@ -52,24 +52,22 @@ function originsSelect(key: RegionKey) {
 
             <!-- IZQUIERDA: texto -->
             <div class="ori-intro">
-                <div class="ori-intro-eyebrow">OUR ORIGINS</div>
+                <div class="ori-intro-eyebrow">{{ $t('origins.badge') }}</div>
 
                 <h2 class="ori-intro-title">
-                    Rich<br />
-                    diversity,<br />
-                    one<br />
-                    exceptional<br />
-                    <em>cup.</em>
+                    {{ $t('origins.h2') }}<br />
+                    {{ $t('origins.br') }}<br />
+                    {{ $t('origins.br2') }}<br />
+                    {{ $t('origins.br3') }}<br />
+                    {{ $t('origins.br4') }}
                 </h2>
 
                 <p class="ori-intro-desc">
-                    From Peru's diverse coffee-growing landscapes, each origin
-                    offers a unique expression of flavor, aroma, and character.
-                    Explore the journey behind every cup.
+                    {{ $t('origins.description') }}
                 </p>
 
                 <RouterLink to="/offer" class="ori-coffee-button">
-                    <span>EXPLORE OUR COFFEES</span>
+                    <span>{{ $t('origins.exploreCoffees') }}</span>
                 </RouterLink>
             </div>
 
@@ -113,17 +111,17 @@ function originsSelect(key: RegionKey) {
                     <div class="ori-card-region-name">{{ selectedOrigin.name }}</div>
 
                     <div class="ori-card-row">
-                        <span class="ori-card-key">Region</span>
+                        <span class="ori-card-key">{{ $t('origins.region') }}</span>
                         <span class="ori-card-val">{{ selectedOrigin.region }}</span>
                     </div>
 
                     <div class="ori-card-row">
-                        <span class="ori-card-key">Altitude</span>
+                        <span class="ori-card-key">{{ $t('origins.altitude') }}</span>
                         <span class="ori-card-val">{{ selectedOrigin.alt }}</span>
                     </div>
 
                     <div class="ori-card-row">
-                        <span class="ori-card-key">Varieties</span>
+                        <span class="ori-card-key">{{ $t('origins.varieties') }}</span>
                         <span class="ori-card-tags">
                             <span v-for="variety in selectedOrigin.varieties" :key="variety" class="ori-tag ori-tag-v">
                                 {{ variety }}
@@ -132,7 +130,7 @@ function originsSelect(key: RegionKey) {
                     </div>
 
                     <div class="ori-card-row">
-                        <span class="ori-card-key">Cup Profile</span>
+                        <span class="ori-card-key">{{ $t('origins.cupProfile.title') }}</span>
                         <span class="ori-card-tags">
                             <span v-for="cup in selectedOrigin.cup" :key="cup" class="ori-tag ori-tag-c">
                                 {{ cup }}

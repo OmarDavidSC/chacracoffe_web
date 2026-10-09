@@ -1,7 +1,8 @@
 export default {
     home: {
         badge: 'Specialty Coffee from Peru',
-        title: 'Chacra Coffee',
+        // title: 'Chacra Coffee',
+        title: 'CHACRA<br>COFFEE',
         subscribe: 'From the farms to the world.',
         offerList: 'View Current Offer List',
         requestSamples: 'Request Samples'
@@ -56,7 +57,8 @@ export default {
 
     origins: {
         badge: 'Our Origins',
-        title: 'Rich diversity, one exceptional cup.',
+        // title: 'Rich diversity, one exceptional cup.',
+        h2: 'Rich', br: 'diversity,', br2: 'one', br3: 'exceptional', br4: 'cup.',
         description: `From Peru's diverse coffee-growing landscapes, each origin offers a unique expression of flavor, aroma, and character. Explore the journey behind every cup.`,
         exploreCoffees: 'Explore Our Coffees',
 
@@ -76,7 +78,8 @@ export default {
 
     whyChoose: {
         badge: 'Why Choose Chacra Coffee',
-        title: 'More than coffee a commitment.',
+        // title: 'More than coffee a commitment.',
+        h2: 'More than coffee,', br: 'a', br2: 'commitment.',
 
         sustainable: {
             title: 'Sustainable',
@@ -101,14 +104,16 @@ export default {
 
     producers: {
         badge: 'Our Producers',
-        title: 'The heart of our coffee.',
+        // title: 'The heart of our coffee.',
+        h2: 'The', br: 'heart of', br2: 'our coffee.',
         relationshipDescription: 'We build long-term relationships with producers who share our passion for quality and sustainability.',
         storyDescription: 'Each producer we work with is a vital part of our story, and we are proud to share their stories with you.',
     },
 
     journey: {
         badge: 'Coffee Journey',
-        title: 'From our farms to your cup.',
+        // title: 'From our farms to your cup.',
+        h2: 'From', br: 'our farms', br2: 'to your cup.',
         cultivation: 'Cultivation',
         harvest: 'Harvest',
         processing: 'Processing',
@@ -118,7 +123,8 @@ export default {
 
     cta: {
         badge: 'Looking for Specialty Coffee?',
-        title: 'We would love to work with you.',
+        // title: 'We would love to work with you.',
+        h2: 'We would love to', br: 'work with you.',
         description: 'Request our current offer list or get in touch — we ship to UK, Europe and beyond.',
         contactUs: 'Contact Us'
     }

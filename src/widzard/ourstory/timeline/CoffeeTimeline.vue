@@ -5,13 +5,12 @@
         <div class="container timeline-container">
             <!-- HEADER -->
             <div class="timeline-header" data-aos="fade-up" data-aos-duration="900" data-aos-once="true">
-                <span class="eyebrow gold"> Our Journey </span>
+                <span class="eyebrow gold"> {{ $t('cofffeetimeline.badge') }} </span>
 
-                <h2 class="section-title">A decade of <em>growth.</em></h2>
+                <h2 class="section-title"> {{ $t('cofffeetimeline.h1') }} <em>{{ $t('cofffeetimeline.em') }}</em></h2>
 
                 <p>
-                    From a single family farm to a growing network of producers across the
-                    highlands of Cajamarca.
+                    {{ $t('cofffeetimeline.description') }}
                 </p>
             </div>
 

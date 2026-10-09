@@ -2,8 +2,8 @@
     <section class="ab-certs">
         <div class="container">
             <div class="ab-certs-header aos-in" data-aos="">
-                <span class="eyebrow gold">Our Processing</span>
-                <h2 class="section-title">From cherry<br /><em>to export, in-house.</em></h2>
+                <span class="eyebrow gold">{{ $t('process.pill') }}</span>
+                <h2 class="section-title"> {{ $t('process.h1') }} <br /><em>{{ $t('process.em') }}</em></h2>
             </div>
             <div class="ab-certs-grid">
                 <div class="ab-cert-item aos-in" data-aos="">
@@ -15,9 +15,8 @@
                             <path d="M16 20v6M11 26h10" />
                         </svg>
                     </div>
-                    <h4>Own Processing Plant</h4>
-                    <p>Our facility in Jaén, Cajamarca, gives us full control over every stage from cherry to green
-                        bean.</p>
+                    <h4>{{ $t('process.t1') }}</h4>
+                    <p>{{ $t('process.d1') }}</p>
                 </div>
                 <div class="ab-cert-item aos-in" data-aos="">
                     <div class="ab-cert-icon">
@@ -27,10 +26,8 @@
                             <path d="M10 16l4 4 8-8" />
                         </svg>
                     </div>
-                    <h4>Washed, Honey &amp;amp; Natural</h4>
-                    <p>We process washed, honey and natural lots in-house, tailoring each method to bring out the best
-                        of every
-                        microlot.</p>
+                    <h4>{{ $t('process.t21') }} &amp;amp; {{ $t('process.t22') }}</h4>
+                    <p>{{ $t('process.d2') }}</p>
                 </div>
                 <div class="ab-cert-item aos-in" data-aos="">
                     <div class="ab-cert-icon">
@@ -40,10 +37,8 @@
                             <path d="M12 10h8M12 14h8M12 18h5" />
                         </svg>
                     </div>
-                    <h4>Full Traceability</h4>
-                    <p>Every lot processed in-house is tracked from farm to shipment, so buyers know exactly where their
-                        coffee
-                        comes from.</p>
+                    <h4>{{ $t('process.t3') }}</h4>
+                    <p>{{ $t('process.d3') }}</p>
                 </div>
                 <div class="ab-cert-item aos-in" data-aos="">
                     <div class="ab-cert-icon">
@@ -53,9 +48,8 @@
                             <path d="M16 10v6l4 2" />
                         </svg>
                     </div>
-                    <h4>Microlot Focus</h4>
-                    <p>Small, separated lots preserve the identity of each farm and variety through the entire process.
-                    </p>
+                    <h4>{{ $t('process.t4') }}</h4>
+                    <p>{{ $t('process.d4') }}</p>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@
           <path d="M6 32C6 26 10 22 15 22H25C30 22 34 26 34 32" fill="none" stroke="#C8A85A" stroke-width="1.8" />
         </svg>
         <span class="stat-num">{{ communities }}+</span>
-        <span class="stat-label">Communities</span>
+        <span class="stat-label">{{ $t('stats.l1') }}</span>
       </div>
       <div class="stat-item">
         <svg class="stat-icon" viewBox="0 0 40 40">
@@ -16,7 +16,7 @@
           <path d="M20 24V34M14 34H26" stroke="#C8A85A" stroke-width="1.8" stroke-linecap="round" />
         </svg>
         <span class="stat-num">{{ producers }}+</span>
-        <span class="stat-label">Producers</span>
+        <span class="stat-label">{{ $t('stats.l2') }}</span>
       </div>
       <div class="stat-item">
         <svg class="stat-icon" viewBox="0 0 40 40">
@@ -24,7 +24,7 @@
           <path d="M10 16C10 22 14 28 20 30C26 28 30 22 30 16" fill="none" stroke="#C8A85A" stroke-width="1.8" />
         </svg>
         <span class="stat-num">{{ cupScore }}–90+</span>
-        <span class="stat-label">Cup Score</span>
+        <span class="stat-label">{{ $t('stats.l3') }}</span>
       </div>
       <div class="stat-item">
         <svg class="stat-icon" viewBox="0 0 40 40">
@@ -33,7 +33,7 @@
             fill="none" stroke="#C8A85A" stroke-width="1.5" />
         </svg>
         <span class="stat-num stock-value">UK &amp; EU</span>
-        <span class="stat-label">Stock Available</span>
+        <span class="stat-label">{{ $t('stats.l4') }}</span>
       </div>
     </div>
   </section>

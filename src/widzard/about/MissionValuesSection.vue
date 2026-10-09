@@ -3,10 +3,10 @@
     <div class="ab-values-bg"></div>
     <div class="container">
       <div class="ab-values-header" data-aos="fade-up" data-aos-duration="900" data-aos-once="true">
-        <span class="eyebrow gold">Mission &amp; Values</span>
+        <span class="eyebrow gold">{{ $t('mission.t1') }} &amp; {{ $t('mission.t2') }}</span>
         <h2 class="section-title light">
-          What drives<br />
-          <em>everything we do.</em>
+          {{ $t('mission.h2') }}<br />
+          <em>{{ $t('mission.br') }}</em>
         </h2>
       </div>
       <div class="ab-values-grid">
@@ -18,11 +18,9 @@
               <path d="M14 3v19" />
             </svg>
           </div>
-          <h3>Quality First</h3>
+          <h3>{{ $t('mission.main1') }}</h3>
           <p>
-            Every lot we sell has been cupped, scored and approved by our
-            Q-Graders. We publish honest scores — no inflation, no marketing
-            language.
+            {{ $t('mission.des1') }}
           </p>
         </div>
         <div class="ab-val-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
@@ -35,10 +33,9 @@
               <path d="M13 9h2M11.5 16.5l-2-3.5M16.5 16.5l2-3.5" />
             </svg>
           </div>
-          <h3>Producer Relationships</h3>
+          <h3>{{ $t('mission.main2') }}</h3>
           <p>
-            We work directly with over 150 smallholder farmers across 50+
-            communities. Fair prices and long-term commitment — not spot buying.
+            {{ $t('mission.des2') }}
           </p>
         </div>
         <div class="ab-val-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-once="true">
@@ -48,11 +45,9 @@
               <path d="M4 14h20M14 4l10 10-10 10" />
             </svg>
           </div>
-          <h3>Full Traceability</h3>
+          <h3>{{ $t('mission.main3') }}</h3>
           <p>
-            Every bag we ship is traceable to its farm, producer and community.
-            We provide full cupping reports, harvest data and processing notes
-            on request.
+            {{ $t('mission.des3') }}
           </p>
         </div>
         <div class="ab-val-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-once="true">
@@ -63,10 +58,9 @@
               <path d="M9 10V7a5 5 0 0110 0v3" />
             </svg>
           </div>
-          <h3>Transparency</h3>
+          <h3>{{ $t('mission.main4') }}</h3>
           <p>
-            We share farm-gate prices, processing costs and logistics openly
-            with our buyers. No hidden margins, no opaque supply chains.
+            {{ $t('mission.des4') }}
           </p>
         </div>
         <div class="ab-val-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" data-aos-once="true">
@@ -77,10 +71,9 @@
               <path d="M2 14h4M22 14h4M14 2v4M14 22v4" />
             </svg>
           </div>
-          <h3>Global Reach</h3>
+          <h3>{{ $t('mission.main5') }}</h3>
           <p>
-            We export FOB from Callao and hold UK &amp; EU warehouse stock for
-            faster, simpler delivery to roasters across Europe.
+            {{ $t('mission.des5') }}
           </p>
         </div>
         <div class="ab-val-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" data-aos-once="true">
@@ -90,10 +83,9 @@
               <path d="M14 4l2.5 5 5.5.8-4 3.9.9 5.5L14 16.7l-4.9 2.5.9-5.5-4-3.9 5.5-.8z" />
             </svg>
           </div>
-          <h3>Constant Improvement</h3>
+          <h3>{{ $t('mission.main6') }}</h3>
           <p>
-            We invest in processing infrastructure, Q-Grader training and
-            fermentation research to push quality higher every season.
+            {{ $t('mission.des6') }}
           </p>
         </div>
       </div>

@@ -1,3 +1,8 @@
+import about from "./espanol/about";
+import home from "./espanol/home";
+import offer from "./espanol/offer";
+import story from "./espanol/story";
+
 export default {
     navbar : {
         home: 'Inicio',
@@ -9,10 +14,10 @@ export default {
         requestSamples: 'Solicitar Muestra',
         login: 'Iniciar Sesión',        
     },
-    home: {
-        title: 'Chacra Coffee',
-        subscribe: 'Desde las granjas hasta el mundo.'
-    },
+    ...home,
+    ...story,
+    ...about,
+    ...offer,
     footer: {
         rights: 'Todos los derechos reservados.',
     }

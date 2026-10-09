@@ -2,17 +2,16 @@
   <section class="cta-section">
     <div class="cta-bg"></div>
     <div class="cta-inner">
-      <div class="cta-pill">Want the Full Offer List?</div>
+      <div class="cta-pill">{{ $t('cta.pill') }}</div>
       <h2 class="cta-title">
-        Request our current<br />price list &amp; samples.
+        {{ $t('cta.h2') }}<br />{{ $t('cta.br1') }} &amp; {{ $t('cta.br2') }}
       </h2>
       <p class="cta-sub">
-        We update our offer list monthly with fresh crop arrivals from each
-        origin. Get in touch for pricing, MOQs and shipping terms.
+        {{ $t('cta.description') }}
       </p>
       <div class="cta-btns">
-        <router-link to="/offer" class="btn btn-ghost"> Request Offer List </router-link>
-        <router-link to="/contact" class="btn btn-gold"> Contact Us </router-link>
+        <router-link to="/offer" class="btn btn-ghost"> {{ $t('cta.buttom_offer') }} </router-link>
+        <router-link to="/contact" class="btn btn-gold"> {{ $t('cta.buttom_contact') }} </router-link>
       </div>
     </div>
   </section>

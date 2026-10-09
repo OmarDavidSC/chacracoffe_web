@@ -3,15 +3,15 @@
     <!-- HEADER -->
     <section class="coffees-hero">
       <div class="container">
-        <span class="eyebrow gold"> Our Coffees </span>
+        <span class="eyebrow gold"> {{ $t('grid.pill') }} </span>
 
         <h1 class="section-title">
-          Explore our
-          <em>coffee lots.</em>
+          {{ $t('grid.h1') }}
+          <em>{{ $t('grid.em') }}</em>
         </h1>
 
         <p class="hero-description">
-          Traceable specialty coffee from the highlands of Cajamarca, Peru.
+          {{ $t('grid.description') }}
         </p>
       </div>
     </section>

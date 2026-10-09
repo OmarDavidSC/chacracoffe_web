@@ -2,24 +2,24 @@
 <section class="ab-gallery-section">
         <div class="container">
             <div class="ab-gallery-header">
-                <span class="eyebrow gold">Inside The Plant</span>
-                <h2>A closer <em>look.</em></h2>
+                <span class="eyebrow gold">{{ $t('inside.pill') }}</span>
+                <h2>{{ $t('inside.h2') }} <em>{{ $t('inside.em') }}</em></h2>
             </div>
             <div class="ab-gallery-grid">
                 <div class="g-item" style="background-image:url('/img/insidetheplant/PLanta_01.jpg')">
-                    <span class="g-caption">Chacra Plant</span>
+                    <span class="g-caption">{{ $t('inside.c1') }} </span>
                 </div>
                 <div class="g-item" style="background-image:url('/img/insidetheplant/TRITE.jpg')">
-                    <span class="g-caption">Trite</span>
+                    <span class="g-caption">{{ $t('inside.c2') }}</span>
                 </div>
                 <div class="g-item" style="background-image:url('/img/insidetheplant/Sorting.jpg')">
-                    <span class="g-caption">Sorting</span>
+                    <span class="g-caption">{{ $t('inside.c3') }}</span>
                 </div>
                 <div class="g-item" style="background-image:url('/img/insidetheplant/Almacenamiento.jpg')">
-                    <span class="g-caption">Storage</span>
+                    <span class="g-caption">{{ $t('inside.c4') }}</span>
                 </div>
                 <div class="g-item" style="background-image:url('/img/insidetheplant/Quality_Lab.jpg')">
-                    <span class="g-caption">Quality Lab</span>
+                    <span class="g-caption">{{ $t('inside.c5') }}</span>
                 </div>
             </div>
         </div>

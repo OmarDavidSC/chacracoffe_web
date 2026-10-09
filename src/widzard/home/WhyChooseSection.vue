@@ -3,8 +3,8 @@
         <div class="why-bg"></div>
         <div class="container why-inner">
             <div class="why-header">
-                <span class="eyebrow gold">Why Choose Chacra Coffee</span>
-                <h2 class="section-title light">More than coffee,<br>a <em>commitment.</em></h2>
+                <span class="eyebrow gold">{{ $t('whyChoose.badge') }}</span>
+                <h2 class="section-title light">{{ $t('whyChoose.h2') }}<br>{{ $t('whyChoose.br') }} <em>{{ $t('whyChoose.br2') }}</em></h2>
             </div>
             <div class="why-pillars">
                 <div class="pillar">
@@ -13,10 +13,8 @@
                                 d="M25 10C20 10 12 15 12 25C12 30 15 32 18 33C17 36 17 40 17 40H33C33 40 33 36 32 33C35 32 38 30 38 25C38 15 30 10 25 10Z"
                                 fill="none" stroke="#C8A85A" stroke-width="2" />
                         </svg></div>
-                    <h3>Sustainable</h3>
-                    <p>We partner with coffee-growing communities that embrace responsible farming practices,
-                        environmental
-                        stewardship, and long-term sustainability.</p>
+                    <h3>{{ $t('whyChoose.sustainable.title') }}</h3>
+                    <p>{{ $t('whyChoose.sustainable.description') }}</p>
                 </div>
                 <div class="pillar">
                     <div class="pillar-icon"><svg viewBox="0 0 50 50" width="26" height="26">
@@ -24,10 +22,8 @@
                             <path d="M10 40C10 32 17 26 25 26C33 26 40 32 40 40" fill="none" stroke="#C8A85A"
                                 stroke-width="2" />
                         </svg></div>
-                    <h3>Transparent</h3>
-                    <p>From farm to cup, every coffee is fully traceable. We build direct relationships with producers,
-                        ensuring
-                        trust, fairness, and accountability throughout the supply chain.</p>
+                    <h3>{{ $t('whyChoose.transparent.title') }}</h3>
+                    <p>{{ $t('whyChoose.transparent.description') }}</p>
                 </div>
                 <div class="pillar">
                     <div class="pillar-icon"><svg viewBox="0 0 50 50" width="26" height="26">
@@ -35,10 +31,8 @@
                                 fill="none" stroke="#C8A85A" stroke-width="2" />
                             <path d="M18 38V42M32 38V42" stroke="#C8A85A" stroke-width="2" stroke-linecap="round" />
                         </svg></div>
-                    <h3>Exceptional</h3>
-                    <p>Every lot is carefully selected, cupped, and quality controlled to ensure distinctive flavor
-                        profiles and
-                        consistently outstanding coffees.</p>
+                    <h3>{{ $t('whyChoose.exceptional.title') }}</h3>
+                    <p>{{ $t('whyChoose.exceptional.description') }}</p>
                 </div>
                 <div class="pillar">
                     <div class="pillar-icon"><svg viewBox="0 0 50 50" width="26" height="26">
@@ -46,10 +40,8 @@
                                 fill="none" stroke="#C8A85A" stroke-width="2" />
                             <path d="M18 38V42M32 38V42" stroke="#C8A85A" stroke-width="2" stroke-linecap="round" />
                         </svg></div>
-                    <h3>Origin-Driven</h3>
-                    <p>Sourced from Peru's diverse coffee-growing regions, our coffees reflect the unique terroir,
-                        microclimates,
-                        and traditions that make each origin truly distinctive.</p>
+                    <h3>{{ $t('whyChoose.originDriven.title') }}</h3>
+                    <p>{{ $t('whyChoose.originDriven.description') }}</p>
                 </div>
             </div>
         </div>

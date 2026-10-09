@@ -3,11 +3,11 @@
     <div class="container">
       <!-- HEADER -->
       <div class="ab-team-header" data-aos="fade-up" data-aos-duration="900" data-aos-once="true">
-        <span class="eyebrow gold">The Team</span>
+        <span class="eyebrow gold">{{ $t('team.pill') }}</span>
 
         <h2 class="section-title">
-          The people behind<br />
-          <em>every cup.</em>
+          {{ $t('team.h2') }}<br />
+          <em>{{ $t('team.em') }}</em>
         </h2>
       </div>
 

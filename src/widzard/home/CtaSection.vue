@@ -2,11 +2,11 @@
     <section class="cta-section">
         <div class="cta-bg"></div>
         <div class="cta-inner">
-            <div class="cta-pill">Looking for Specialty Coffee?</div>
-            <h2 class="cta-title">We would love to<br>work with you.</h2>
-            <p class="cta-sub">Request our current offer list or get in touch — we ship to UK, Europe and beyond.</p>
+            <div class="cta-pill">{{ $t('cta.badge') }}</div>
+            <h2 class="cta-title">{{ $t('cta.h2') }}<br>{{ $t('cta.br') }}</h2>
+            <p class="cta-sub">{{ $t('cta.description') }}</p>
             <div class="cta-btns">
-                <router-link to="/contact" class="btn btn-ghost"> Contact Us </router-link>
+                <router-link to="/contact" class="btn btn-ghost"> {{ $t('cta.contactUs') }} </router-link>
             </div>
         </div>
     </section>

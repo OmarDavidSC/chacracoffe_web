@@ -18,12 +18,12 @@
                 <div v-else class="catalog-empty">
                     <div class="empty-icon">☕</div>
 
-                    <h3>No lots found</h3>
+                    <h3>{{ $t('catalog.not') }}</h3>
 
-                    <p>No lots match your current filters.</p>
+                    <p>{{ $t('catalog.p') }}</p>
 
                     <button type="button" class="btn btn-dark" @click="resetFilters">
-                        Reset Filters
+                        {{ $t('catalog.button') }}
                     </button>
                 </div>
             </div>

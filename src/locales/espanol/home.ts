@@ -56,7 +56,8 @@ export default {
 
     origins: {
         badge: 'Nuestros orígenes',
-        title: 'Gran diversidad, una taza excepcional.',
+        // title: 'Gran diversidad, una taza excepcional.',
+        h2: 'Gran', br: 'diversidad,', br2: 'una', br3: 'taza', br4: 'excepcional.',
         description: `Provenientes de los diversos paisajes cafetaleros de Perú, cada origen ofrece una expresión única de sabor, aroma y carácter. Descubre la historia detrás de cada taza.`,
         exploreCoffees: 'Explora nuestros cafés',
 
@@ -76,7 +77,7 @@ export default {
 
     whyChoose: {
         badge: '¿Por qué elegir Chacra Coffee?',
-        title: 'Más que café, un compromiso.',
+        h2: 'Más que café,', br: 'un', br2: 'compromiso.',
 
         sustainable: {
             title: 'Sostenible',
@@ -101,14 +102,15 @@ export default {
 
     producers: {
         badge: 'Nuestros Productores',
-        title: 'El corazón de nuestro café.',
+        h2: 'El', br: 'corazón de', br2: 'nuestro café.',
         relationshipDescription: 'Construimos relaciones a largo plazo con productores que comparten nuestra pasión por la calidad y la sostenibilidad.',
         storyDescription: 'Cada productor con el que trabajamos es una parte fundamental de nuestra historia, y nos enorgullece compartir sus historias con ustedes.',
     },
 
     journey: {
         badge: 'El viaje del café',
-        title: 'De nuestras fincas a tu taza.',
+        // title: 'De nuestras fincas a tu taza.',
+        h2: 'De', br: 'nuestras fincas', br2: 'a tu taza.',
         cultivation: 'Cultivo',
         harvest: 'Cosecha',
         processing: 'Procesamiento',

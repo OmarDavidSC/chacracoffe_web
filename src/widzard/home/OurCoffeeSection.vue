@@ -86,7 +86,7 @@ onUnmounted(() => {
 
             <div class="coffees-header">
                 <div>
-                    <span class="eyebrow gold"> Our Coffees </span>
+                    <span class="eyebrow gold"> {{ $t('coffees.badge') }} </span>
 
                     <h2 class="section-title">
                         Exceptional coffees,<br />
@@ -96,13 +96,9 @@ onUnmounted(() => {
 
                 <div class="coffees-header-right">
                     <p>
-                        Discover the richness of Peru through our curated collection of
-                        Specialty Coffees. Sourced from exceptional microclimates across the
-                        country's most celebrated coffee regions, every coffee is
-                        meticulously selected, processed, and quality controlled to deliver
-                        an authentic expression of Peru.
+                        {{ $t('coffees.description') }}
                     </p>
-                    <router-link to="/offer" class="btn btn-dark"> Explore All Coffees</router-link>
+                    <router-link to="/offer" class="btn btn-dark"> {{ $t('coffees.exploreAll') }} </router-link>
                 </div>
             </div>
             <!-- CAROUSEL -->
@@ -122,26 +118,22 @@ onUnmounted(() => {
                         <article class="cc-card">
                             <div class="cc-img"
                                 style="background-image: url(&quot;/img/insidetheplant/Regional.png&quot;);">
-                                <span class="cc-badge"> Regional Blends </span>
+                                <span class="cc-badge"> {{ $t('coffees.regionalBlends.badge') }} </span>
                             </div>
                             <div class="cc-body">
                                 <div class="cc-tags">
-                                    <span class="cc-tag"> WASHED </span>
-                                    <span class="cc-tag"> NATURAL </span>
-                                    <span class="cc-tag"> HONEY </span>
-                                    <span class="cc-tag gold-tag"> 83-86 pts </span>
+                                    <span class="cc-tag"> {{ $t('coffees.regionalBlends.washed') }} </span>
+                                    <span class="cc-tag"> {{ $t('coffees.regionalBlends.natural') }} </span>
+                                    <span class="cc-tag"> {{ $t('coffees.regionalBlends.honey') }} </span>
+                                    <span class="cc-tag gold-tag"> {{ $t('coffees.regionalBlends.score') }} </span>
                                 </div>
-                                <h3 class="cc-title">Regional Blends</h3>
+                                <h3 class="cc-title"> {{ $t('coffees.regionalBlends.title') }} </h3>
                                 <p class="cc-desc">
-                                    While a microlot offers the rarity of a single farm. our Regional Blends offer the
-                                    identify of
-                                    an entire region. These ara consistent, everyday coffees that maintain stable flavor
-                                    notes year-round,
-                                    thanks to the collective effort of our community.
+                                    {{ $t('coffees.regionalBlends.description') }}
                                 </p>
 
                                 <router-link to="/offer" class="cc-link">
-                                    View Offer List
+                                    {{ $t('coffees.regionalBlends.viewOffer') }}
                                     <svg viewBox="0 0 16 16" width="13" height="13">
                                         <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"
                                             fill="none" stroke-linecap="round" stroke-linejoin="round" />
@@ -153,25 +145,21 @@ onUnmounted(() => {
                         <article class="cc-card cc-featured">
                             <div class="cc-img"
                                 style="background-image: url(&quot;/img/insidetheplant/Mircrolotes.jpg&quot;);">
-                                <span class="cc-badge"> Microlots </span>
+                                <span class="cc-badge"> {{ $t('coffees.microlots.badge') }} </span>
                             </div>
                             <div class="cc-body">
                                 <div class="cc-tags">
-                                    <span class="cc-tag"> WASHED </span>
-                                    <span class="cc-tag"> NATURAL </span>
-                                    <span class="cc-tag"> HONEY </span>
-                                    <span class="cc-tag gold-tag"> 86-90+ pts </span>
+                                    <span class="cc-tag"> {{ $t('coffees.microlots.washed') }} </span>
+                                    <span class="cc-tag"> {{ $t('coffees.microlots.natural') }} </span>
+                                    <span class="cc-tag"> {{ $t('coffees.microlots.honey') }} </span>
+                                    <span class="cc-tag gold-tag"> {{ $t('coffees.microlots.score') }} </span>
                                 </div>
-                                <h3 class="cc-title">Microlots</h3>
+                                <h3 class="cc-title"> {{ $t('coffees.microlots.title') }} </h3>
                                 <p class="cc-desc">
-                                    A microlot is coffee select from a single farm, grown under ideal conditions, and
-                                    meticulously processed
-                                    separately from the rest of the harvest. The result is a clean cup with guaranteed
-                                    traceability and
-                                    distinctive flavor notes that represent the best of its origin.
+                                    {{ $t('coffees.microlots.description') }}
                                 </p>
                                 <router-link to="/offer" class="cc-link">
-                                    View Offer List
+                                    {{ $t('coffees.microlots.viewOffer') }}
                                     <svg viewBox="0 0 16 16" width="13" height="13">
                                         <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"
                                             fill="none" stroke-linecap="round" stroke-linejoin="round" />
@@ -183,24 +171,21 @@ onUnmounted(() => {
                         <article class="cc-card">
                             <div class="cc-img"
                                 style="background-image: url(&quot;/img/insidetheplant/Experimental.jpg&quot;);">
-                                <span class="cc-badge"> Experimental </span>
+                                <span class="cc-badge"> {{ $t('coffees.nanoLots.badge') }} </span>
                             </div>
                             <div class="cc-body">
                                 <div class="cc-tags">
-                                    <span class="cc-tag"> WASHED </span>
-                                    <span class="cc-tag"> NATURAL </span>
-                                    <span class="cc-tag"> HONEY </span>
-                                    <span class="cc-tag gold-tag"> 86-90+ pts </span>
+                                    <span class="cc-tag"> {{ $t('coffees.nanoLots.washed') }} </span>
+                                    <span class="cc-tag"> {{ $t('coffees.nanoLots.natural') }} </span>
+                                    <span class="cc-tag"> {{ $t('coffees.nanoLots.honey') }} </span>
+                                    <span class="cc-tag gold-tag"> {{ $t('coffees.nanoLots.score') }} </span>
                                 </div>
-                                <h3 class="cc-title">Nano Lots</h3>
+                                <h3 class="cc-title"> {{ $t('coffees.nanoLots.title') }} </h3>
                                 <p class="cc-desc">
-                                    The art of coffee in its purest, most concentrated form. Nano-lots are botanical gems hidden within
-                                    the harvest-micro-batches treated with unique fermentation processes and meticulous care.
-                                    You aren't just drinking specialty coffee; you are experiencing a limited edition of a producer's 
-                                    dedicated effort.
+                                    {{ $t('coffees.nanoLots.description') }}
                                 </p>
                                 <router-link to="/offer" class="cc-link">
-                                    View Offer List
+                                    {{ $t('coffees.nanoLots.viewOffer') }}
                                     <svg viewBox="0 0 16 16" width="13" height="13">
                                         <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"
                                             fill="none" stroke-linecap="round" stroke-linejoin="round" />

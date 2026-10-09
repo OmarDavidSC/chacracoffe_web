@@ -2,40 +2,34 @@
     <section class="ab-process-section">
         <div class="container">
             <div class="ab-process-header">
-                <span class="eyebrow gold">How It Works</span>
-                <h2>From <em>pergamino</em> and <em>natural</em> to export-ready green coffee</h2>
+                <span class="eyebrow gold">{{ $t('how.badge') }}</span>
+                <h2>{{ $t('how.h2') }} <em>{{ $t('how.em') }}</em> {{ $t('how.and') }} <em>{{ $t('how.em1') }}</em> {{ $t('how.h22') }}</h2>
             </div>
             <div class="ab-process-timeline">
                 <div class="ab-process-step">
                     <div class="ab-process-num">01</div>
-                    <h4>Reception</h4>
-                    <p>Coffee arrives from our partner producers and is carefully received, identified and registered to
-                        maintain
-                        complete lot traceability.</p>
+                    <h4>{{ $t('how.t1') }}</h4>
+                    <p>{{ $t('how.p1') }}</p>
                 </div>
                 <div class="ab-process-step">
                     <div class="ab-process-num">02</div>
-                    <h4>Quality Control</h4>
-                    <p>Each lot is evaluated through physical analysis to verify moisture, defects, size.</p>
+                    <h4>{{ $t('how.t2') }}</h4>
+                    <p>{{ $t('how.p2') }}</p>
                 </div>
                 <div class="ab-process-step">
                     <div class="ab-process-num">03</div>
-                    <h4>Hulling & Processing</h4>
-                    <p>Coffee parchment is hulled to obtain green coffee, with controlled processing designed to
-                        preserve the
-                        characteristics of each lot.</p>
+                    <h4>{{ $t('how.t3') }}</h4>
+                    <p>{{ $t('how.p3') }}</p>
                 </div>
                 <div class="ab-process-step">
                     <div class="ab-process-num">04</div>
-                    <h4>Sorting & Grading</h4>
-                    <p>Green coffee is mechanically sorted to remove defects and separate beans according to size,
-                        density and
-                        quality.</p>
+                    <h4>{{ $t('how.t4') }}</h4>
+                    <p>{{ $t('how.p4') }}</p>
                 </div>
                 <div class="ab-process-step">
                     <div class="ab-process-num">05</div>
-                    <h4>Final Preparation</h4>
-                    <p>Selected coffees are prepared according to each customer's specifications, packed, labeled.</p>
+                    <h4>{{ $t('how.t5') }}</h4>
+                    <p>{{ $t('how.p5') }}</p>
                 </div>
             </div>
         </div>

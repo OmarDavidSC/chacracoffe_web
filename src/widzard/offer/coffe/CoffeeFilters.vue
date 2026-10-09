@@ -4,7 +4,7 @@
             <div class="filters-bar">
                 <!-- CATEGORY -->
                 <div class="filter-group">
-                    <span class="filter-label"> Category </span>
+                    <span class="filter-label"> {{ $t('filters.l1') }} </span>
 
                     <div class="filter-pills">
                         <button v-for="filter in categoryFilters" :key="filter.value" type="button" class="filter-pill"
@@ -18,8 +18,7 @@
 
                 <!-- PROCESS -->
                 <div class="filter-group">
-                    <span class="filter-label"> Process </span>
-
+                    <span class="filter-label"> {{ $t('filters.l2') }} </span>
                     <div class="filter-pills">
                         <button v-for="filter in processFilters" :key="filter.value" type="button" class="filter-pill"
                             :class="{
@@ -32,7 +31,7 @@
 
                 <!-- ORIGIN -->
                 <div class="filter-group">
-                    <span class="filter-label"> Origin </span>
+                    <span class="filter-label"> {{ $t('filters.l3') }} </span>
 
                     <select class="filter-select" :value="selectedOrigin" @change="handleOriginChange">
                         <option v-for="filter in originFilters" :key="filter.value" :value="filter.value">

@@ -15,7 +15,7 @@
 
                     <div class="timeline-card-status">
                         <span></span>
-                        Our Story
+                        {{ $t('cofffeetimeline.story') }}
                     </div>
                 </div>
 

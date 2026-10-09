@@ -2,10 +2,9 @@
   <section class="story-hero">
     <div class="story-hero-bg"></div>
     <div class="story-hero-inner container">
-      <span class="eyebrow gold">Since 2014</span>
-      <h1 class="page-title">Our <em>Story.</em></h1>
-      <p class="page-sub">A family-rooted company built on direct relationships with coffee producers across Northern
-        Peru — from a single farm in Jaén to a trusted name in the European specialty market.</p>
+      <span class="eyebrow gold">{{ $t('hero.badge') }}</span>
+      <h1 class="page-title">{{ $t('hero.h1') }} <em>{{ $t('hero.em') }}</em></h1>
+      <p class="page-sub">{{ $t('hero.description') }}</p>
     </div>
   </section>
 </template>

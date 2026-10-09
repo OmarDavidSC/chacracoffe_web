@@ -2,13 +2,12 @@
   <section class="ab-hero">
     <div class="ab-hero-overlay"></div>
     <div class="ab-hero-content">
-      <span class="hero-eyebrow">Jaén, Cajamarca — Peru</span>
-      <h1 class="ab-hero-title">About<br><em>Chacra</em></h1>
-      <p class="ab-hero-sub">A specialty coffee exporter born in the highlands of Cajamarca — built on relationships,
-        quality and transparency.</p>
+      <span class="hero-eyebrow">{{ $t('hero.badge') }}</span>
+      <h1 class="ab-hero-title">{{ $t('hero.h1') }}<br><em>{{ $t('hero.em') }}</em></h1>
+      <p class="ab-hero-sub">{{ $t('hero.description') }}</p>
       <div class="hero-btns">        
-        <router-link to="/ourstory" class="btn btn-gold"> Our Mission </router-link>
-        <router-link to="/contact" class="btn btn-ghost"> Work With Us </router-link>
+        <router-link to="/ourstory" class="btn btn-gold"> {{ $t('hero.buttom_story') }} </router-link>
+        <router-link to="/contact" class="btn btn-ghost"> {{ $t('hero.buttom_contact') }} </router-link>
       </div>
     </div>
     <div class="ab-hero-scroll">
