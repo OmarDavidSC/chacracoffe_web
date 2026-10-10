@@ -63,7 +63,7 @@ interface Props {
     resultsCount: number;
 }
 
-const props = defineProps<Props>();
+defineProps<Props>();
 
 const emit = defineEmits<{
     (event: "update:category", value: string): void;
