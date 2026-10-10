@@ -2,11 +2,11 @@
     <section class="cta-section">
         <div class="cta-bg"></div>
         <div class="cta-inner">
-            <div class="cta-pill">{{ $t('cta.badge') }}</div>
-            <h2 class="cta-title">{{ $t('cta.h2') }}<br>{{ $t('cta.br') }}</h2>
-            <p class="cta-sub">{{ $t('cta.description') }}</p>
+            <div class="cta-pill">{{ $t('ctahome.badge') }}</div>
+            <h2 class="cta-title">{{ $t('ctahome.h2') }}<br>{{ $t('ctahome.br') }}</h2>
+            <p class="cta-sub">{{ $t('ctahome.description') }}</p>
             <div class="cta-btns">
-                <router-link to="/contact" class="btn btn-ghost"> {{ $t('cta.contactUs') }} </router-link>
+                <router-link to="/contact" class="btn btn-ghost"> {{ $t('ctahome.contactUs') }} </router-link>
             </div>
         </div>
     </section>

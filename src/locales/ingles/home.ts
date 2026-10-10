@@ -121,7 +121,7 @@ export default {
         export: 'Export'
     },
 
-    cta: {
+    ctahome: {
         badge: 'Looking for Specialty Coffee?',
         // title: 'We would love to work with you.',
         h2: 'We would love to', br: 'work with you.',

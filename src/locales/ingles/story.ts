@@ -1,5 +1,5 @@
 export default {
-    hero: {
+    herostory: {
         badge: 'Since 2014',
         h1: 'Our', em: 'Story.',
         description: `A family-rooted company built on direct relationships with coffee producers across Northern
@@ -42,10 +42,10 @@ export default {
         t4: 'COMMUNITY',
         d4: `Building lasting bonds wiht producers and communities that grow together with every harvest.`
     },
-    cta: {
+    ctastory: {
         pill: 'Want to Know More?',
         h2: `Let's build something`, br: 'together.',
-        sub: `>Whether you're a roaster looking for your next origin, or just curious about how we work — we'd
+        sub: `Whether you're a roaster looking for your next origin, or just curious about how we work — we'd
         love to hear from you.`,
         buttom_offer: 'View Our Coffees',
         buttom_contact: 'Contact Us'

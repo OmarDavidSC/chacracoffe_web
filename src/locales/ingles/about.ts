@@ -7,7 +7,7 @@ export default {
         buttom_story: 'Our Mission',
         buttom_contact: 'Work With Us',
     },
-    cta: {
+    ctaabout: {
         pill: `Ready to source from Peru?`,
         h2: `Let's build something`, br: 'together.',
         sub: `Whether you're an established importer or a roaster looking for your first Peruvian lot —

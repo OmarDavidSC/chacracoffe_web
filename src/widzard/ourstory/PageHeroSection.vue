@@ -2,9 +2,9 @@
   <section class="story-hero">
     <div class="story-hero-bg"></div>
     <div class="story-hero-inner container">
-      <span class="eyebrow gold">{{ $t('hero.badge') }}</span>
-      <h1 class="page-title">{{ $t('hero.h1') }} <em>{{ $t('hero.em') }}</em></h1>
-      <p class="page-sub">{{ $t('hero.description') }}</p>
+      <span class="eyebrow gold">{{ $t('herostory.badge') }}</span>
+      <h1 class="page-title">{{ $t('herostory.h1') }} <em>{{ $t('herostory.em') }}</em></h1>
+      <p class="page-sub">{{ $t('herostory.description') }}</p>
     </div>
   </section>
 </template>

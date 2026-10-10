@@ -118,7 +118,7 @@ export default {
         export: 'Exportación'
     },
 
-    cta: {
+    ctahome: {
         badge: '¿Buscas café de especialidad?',
         title: 'Nos encantaría trabajar con usted.',
         description: 'Solicite nuestra lista de ofertas actual o póngase en contacto con nosotros; realizamos envíos al Reino Unido, a Europa y a otros destinos.',
