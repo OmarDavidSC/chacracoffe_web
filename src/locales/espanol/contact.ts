@@ -1,0 +1,40 @@
+export default {
+    hero: {
+        pill: 'Contáctanos',
+        h1: `Hablemos de`, em: 'café',
+        description: `Ya sea que busques nuestra lista de ofertas actual, una caja de muestras o simplemente quieras conocer más sobre nuestros orígenes, normalmente respondemos en un día hábil.`,
+    },
+    street: {
+        pill: 'Antes de contactarnos',
+        h2: 'Respuestas', em: 'rápidas.',
+        t1: `¿Cómo puedo solicitar muestras?`,
+        d1: `Selecciona "Solicitud de muestras" en el formulario de arriba e indícanos qué orígenes o procesos te interesan. Por lo general, enviamos las muestras en un plazo de 5 a 7 días hábiles.`,
+        t2: `¿Cuál es la cantidad mínima de pedido?`,
+        d2: `La cantidad mínima de pedido varía según el lote: las mezclas regionales comienzan desde un saco de 69 kg, mientras que los microlotes y los lotes experimentales pueden tener una disponibilidad menor. Consúltanos sobre el stock actual.`,
+        t3: `¿Realizan envíos fuera del Reino Unido y la Unión Europea?`,
+        d3: `Sí. Aunque el Reino Unido y la Unión Europea son nuestros mercados principales, podemos coordinar envíos a la mayoría de los destinos. Contáctanos para solicitar una cotización de transporte.`,
+        t4: `¿Puedo visitar las fincas?`,
+        d4: `Por supuesto. Recibimos regularmente a tostadores y compradores para realizar viajes de origen a Jaén y a las comunidades productoras de los alrededores. Escríbenos para planificar una visita.`
+    },
+    main: {
+        info: 'Síguenos',
+        badge: 'CONTÁCTANOS',
+        title: `Hablemos de café.`,
+        sub: `Cuéntanos qué estás buscando y nuestro equipo se pondrá en contacto contigo pronto.`,
+        full_name: 'Nombre completo',
+        company: 'Empresa',
+        email: 'Correo electrónico',
+        phone: 'Teléfono',
+        l1: `Estoy interesado en`,
+        o1: 'Selecciona una opción',
+        o2: 'Solicitud de muestras',
+        o3: 'Lista de ofertas actual',
+        o4: 'Microlotes / Origen único',
+        o5: 'Alianza a largo plazo',
+        o6: 'Otro',
+        message: 'Mensaje',
+        button1: 'Enviar por correo electrónico',
+        button2: 'WhatsApp',
+        success: 'Tu mensaje está listo para enviarse. ¡Gracias!',
+    }
+}

@@ -20,6 +20,26 @@ export default {
         t4: `Can I visit the farms?`,
         d4: `Absolutely. We regularly host roasters and buyers for origin trips to Jaén and surrounding producer
             communities. Reach out to plan a visit.`
-        
+    },
+    main: {
+        info: 'Follow Us',
+        badge: 'GET IN TOUCH',
+        title: `Let's talk coffee.`,
+        sub: `Tell us what you're looking for and our team will get back to you shortly.`,
+        full_name: 'Full Name',
+        company: 'Company',
+        email: 'Email',
+        phone: 'Phone',
+        l1: `I'm interested in`,
+        o1: 'Select an option',
+        o2: 'Requesting Samples',
+        o3: 'Current Offer List',
+        o4: 'Microlots / Single Origin',
+        o5: 'Long-term Partnership',
+        o6: 'Other',
+        message: 'Message',
+        button1: 'Send by Email',
+        button2: 'WhatsApp',
+        success: 'Your message is ready to send. Thank you!',
     }
 }

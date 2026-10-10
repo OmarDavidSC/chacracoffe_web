@@ -1,4 +1,5 @@
 import about from "./espanol/about";
+import contact from "./espanol/contact";
 import home from "./espanol/home";
 import offer from "./espanol/offer";
 import story from "./espanol/story";
@@ -18,6 +19,7 @@ export default {
     ...story,
     ...about,
     ...offer,
+    ...contact,
     footer: {
         rights: 'Todos los derechos reservados.',
     }

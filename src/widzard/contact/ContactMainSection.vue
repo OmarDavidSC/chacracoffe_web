@@ -11,51 +11,51 @@
             <span v-else class="info-value">{{ item.value }}</span>
           </div>
         </div>
-        <div class="info-social-card"> <span class="info-label">Follow Us</span>
+        <div class="info-social-card"> <span class="info-label">{{ $t('main.info') }}</span>
           <div class="socials"> <a href="facebook.com/profile.php?id=61559304344126" class="soc-ico" aria-label="Instagram">◎</a> <a
               href="mailto:info@chacracoffee.com" class="soc-ico" aria-label="Email">✉</a> <a
               href="https://wa.me/51976339443" target="_blank" rel="noopener" class="soc-ico"
               aria-label="WhatsApp">◉</a> </div>
         </div>
       </div> <!-- FORM -->
-      <div class="contact-form-wrap"> <span class="eyebrow">GET IN TOUCH</span>
-        <h2 class="form-title">Let's talk coffee.</h2>
-        <p class="form-sub"> Tell us what you're looking for and our team will get back to you shortly. </p>
+      <div class="contact-form-wrap"> <span class="eyebrow">{{ $t('main.badge') }}</span>
+        <h2 class="form-title">{{ $t('main.title') }}</h2>
+        <p class="form-sub"> {{ $t('main.sub') }} </p>
         <form class="contact-form" @submit.prevent="sendMessage">
           <div class="form-row">
-            <div class="form-field"> <label>Full Name <span>*</span></label> <input v-model="form.name" type="text"
+            <div class="form-field"> <label>{{ $t('main.full_name') }} <span>*</span></label> <input v-model="form.name" type="text"
                 placeholder="Your name" :class="{ error: errors.name }" /> <small v-if="errors.name">{{ errors.name
                 }}</small>
             </div>
-            <div class="form-field"> <label>Company</label> <input v-model="form.company" type="text"
+            <div class="form-field"> <label>{{ $t('main.company') }}</label> <input v-model="form.company" type="text"
                 placeholder="Roastery / Company" /> </div>
           </div>
           <div class="form-row">
-            <div class="form-field"> <label>Email <span>*</span></label> <input v-model="form.email" type="email"
+            <div class="form-field"> <label>{{ $t('main.email') }} <span>*</span></label> <input v-model="form.email" type="email"
                 placeholder="you@company.com" :class="{ error: errors.email }" /> <small v-if="errors.email">{{
                 errors.email
                 }}</small> </div>
-            <div class="form-field"> <label>Phone</label> <input v-model="form.phone" type="tel"
+            <div class="form-field"> <label>{{ $t('main.phone') }}</label> <input v-model="form.phone" type="tel"
                 placeholder="+51 900 000 000" /> </div>
           </div>
-          <div class="form-field"> <label>I'm interested in <span>*</span></label> <select v-model="form.interest"
+          <div class="form-field"> <label>{{ $t('main.l1') }} <span>*</span></label> <select v-model="form.interest"
               :class="{ error: errors.interest }">
-              <option value="" disabled>Select an option</option>
-              <option value="Requesting Samples">Requesting Samples</option>
-              <option value="Current Offer List">Current Offer List</option>
-              <option value="Microlots / Single Origin">Microlots / Single Origin</option>
-              <option value="Long-term Partnership">Long-term Partnership</option>
-              <option value="Other">Other</option>
+              <option value="" disabled>{{ $t('main.o1') }}</option>
+              <option value="Requesting Samples">{{ $t('main.o2') }}</option>
+              <option value="Current Offer List">{{ $t('main.o3') }}</option>
+              <option value="Microlots / Single Origin">{{ $t('main.o4') }}</option>
+              <option value="Long-term Partnership">{{ $t('main.o5') }}</option>
+              <option value="Other">{{ $t('main.o6') }}</option>
             </select> <small v-if="errors.interest">{{ errors.interest }}</small> </div>
-          <div class="form-field"> <label>Message <span>*</span></label> <textarea v-model="form.message" rows="5"
+          <div class="form-field"> <label>{{ $t('main.message') }} <span>*</span></label> <textarea v-model="form.message" rows="5"
               placeholder="Tell us a bit about what you're looking for..."
               :class="{ error: errors.message }"></textarea>
             <small v-if="errors.message">{{ errors.message }}</small>
           </div> <!-- SEND OPTIONS -->
-          <div class="send-options"> <button type="submit" class="btn btn-dark"> Send by Email <span>→</span> </button>
-            <button type="button" class="btn btn-whatsapp" @click="sendWhatsApp"> WhatsApp <span>↗</span> </button>
+          <div class="send-options"> <button type="submit" class="btn btn-dark"> {{ $t('main.button1') }} <span>→</span> </button>
+            <button type="button" class="btn btn-whatsapp" @click="sendWhatsApp"> {{ $t('main.button2') }} <span>↗</span> </button>
           </div>
-          <div v-if="success" class="form-success"> ✓ Your message is ready to send. Thank you! </div>
+          <div v-if="success" class="form-success"> ✓ {{ $t('main.success') }} </div>
         </form>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import about from "./ingles/about";
+import contac from "./ingles/contac";
 import home from "./ingles/home";
 import offer from "./ingles/offer";
 import story from "./ingles/story";
@@ -18,6 +19,7 @@ export default {
     ...story,
     ...about,
     ...offer,
+    ...contac,
     footer: {
         rights: 'All rights reserved.',
     }
