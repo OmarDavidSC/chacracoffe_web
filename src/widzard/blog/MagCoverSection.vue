@@ -1,91 +1,76 @@
 <template>
-<section class="mag-cover">
-  <div class="mag-cover-bg" style="background-image:url('Fondo_Web.jpg')"></div>
-  <div class="mag-cover-overlay"></div>
+  <section class="mag-cover">
+    <div class="mag-cover-bg" style="background-image:url('Fondo_Web.jpg')"></div>
+    <div class="mag-cover-overlay"></div>
 
-  <!-- Ticker -->
-  <div class="mag-ticker">
-    <div class="mag-ticker-inner">
-      <span>Harvest 2025–26</span><span class="td">·</span>
-      <span>Cajamarca · Peru</span><span class="td">·</span>
-      <span>83–88+ Cup Score</span><span class="td">·</span>
-      <span>UK &amp; EU Stock</span><span class="td">·</span>
-      <span>8 New Lots Available</span><span class="td">·</span>
-      <span>Harvest 2025–26</span><span class="td">·</span>
-      <span>Cajamarca · Peru</span><span class="td">·</span>
-      <span>83–88+ Cup Score</span><span class="td">·</span>
-      <span>UK &amp; EU Stock</span><span class="td">·</span>
-      <span>8 New Lots Available</span><span class="td">·</span>
-    </div>
-  </div>
+    <div class="mag-cover-inner">
+      <!-- Masthead -->
+      <div class="mag-masthead">
+        <div class="mag-masthead-left">
+          <span class="mag-issue">Issue № 04 — June 2026</span>
+        </div>
+        <div class="mag-masthead-logo">CHACRA</div>
+        <div class="mag-masthead-right">
+          <span class="mag-issue">Northern Peru · Specialty Coffee</span>
+        </div>
+      </div>
 
-  <div class="mag-cover-inner">
-    <!-- Masthead -->
-    <div class="mag-masthead">
-      <div class="mag-masthead-left">
-        <span class="mag-issue">Issue № 04 — June 2026</span>
-      </div>
-      <div class="mag-masthead-logo">CHACRA</div>
-      <div class="mag-masthead-right">
-        <span class="mag-issue">Northern Peru · Specialty Coffee</span>
-      </div>
-    </div>
+      <!-- Cover headline -->
+      <div class="mag-cover-body">
+        <div class="mag-cover-kicker">
+          <span class="mag-live-dot"></span>
+          New Season Arrivals
+        </div>
+        <h1 class="mag-cover-title">
+          New<br>Releases.
+        </h1>
+        <p class="mag-cover-deck">Eight extraordinary lots from the mountains of Cajamarca — anaerobics, honeys, geishas
+          and highland naturals, all scored and ready for export.</p>
 
-    <!-- Cover headline -->
-    <div class="mag-cover-body">
-      <div class="mag-cover-kicker">
-        <span class="mag-live-dot"></span>
-        New Season Arrivals
+        <div class="mag-cover-toc">
+          <a href="#featured" class="mag-toc-item">
+            <span class="mag-toc-num">01</span>
+            <span class="mag-toc-label">Editor's Pick — Geisha Honey 87.5</span>
+          </a>
+          <a href="#grid" class="mag-toc-item">
+            <span class="mag-toc-num">02</span>
+            <span class="mag-toc-label">All 8 Lots — Full Release Grid</span>
+          </a>
+          <a href="#calendar" class="mag-toc-item">
+            <span class="mag-toc-num">03</span>
+            <span class="mag-toc-label">Harvest Calendar by Origin</span>
+          </a>
+          <a href="#notify" class="mag-toc-item">
+            <span class="mag-toc-num">04</span>
+            <span class="mag-toc-label">Get Notified — Monthly Drops</span>
+          </a>
+        </div>
       </div>
-      <h1 class="mag-cover-title">
-        New<br>Releases.
-      </h1>
-      <p class="mag-cover-deck">Eight extraordinary lots from the mountains of Cajamarca — anaerobics, honeys, geishas and highland naturals, all scored and ready for export.</p>
 
-      <div class="mag-cover-toc">
-        <a href="#featured" class="mag-toc-item">
-          <span class="mag-toc-num">01</span>
-          <span class="mag-toc-label">Editor's Pick — Geisha Honey 87.5</span>
-        </a>
-        <a href="#grid" class="mag-toc-item">
-          <span class="mag-toc-num">02</span>
-          <span class="mag-toc-label">All 8 Lots — Full Release Grid</span>
-        </a>
-        <a href="#calendar" class="mag-toc-item">
-          <span class="mag-toc-num">03</span>
-          <span class="mag-toc-label">Harvest Calendar by Origin</span>
-        </a>
-        <a href="#notify" class="mag-toc-item">
-          <span class="mag-toc-num">04</span>
-          <span class="mag-toc-label">Get Notified — Monthly Drops</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Cover stats bar -->
-    <div class="mag-cover-stats">
-      <div class="mag-cstat">
-        <span class="mag-cstat-n">8</span>
-        <span class="mag-cstat-l">New Lots</span>
-      </div>
-      <div class="mag-cstat-div"></div>
-      <div class="mag-cstat">
-        <span class="mag-cstat-n">85–88+</span>
-        <span class="mag-cstat-l">Cup Score Range</span>
-      </div>
-      <div class="mag-cstat-div"></div>
-      <div class="mag-cstat">
-        <span class="mag-cstat-n">6</span>
-        <span class="mag-cstat-l">Origin Zones</span>
-      </div>
-      <div class="mag-cstat-div"></div>
-      <div class="mag-cstat">
-        <span class="mag-cstat-n">2026</span>
-        <span class="mag-cstat-l">Crop Year</span>
+      <!-- Cover stats bar -->
+      <div class="mag-cover-stats">
+        <div class="mag-cstat">
+          <span class="mag-cstat-n">8</span>
+          <span class="mag-cstat-l">New Lots</span>
+        </div>
+        <div class="mag-cstat-div"></div>
+        <div class="mag-cstat">
+          <span class="mag-cstat-n">85–88+</span>
+          <span class="mag-cstat-l">Cup Score Range</span>
+        </div>
+        <div class="mag-cstat-div"></div>
+        <div class="mag-cstat">
+          <span class="mag-cstat-n">6</span>
+          <span class="mag-cstat-l">Origin Zones</span>
+        </div>
+        <div class="mag-cstat-div"></div>
+        <div class="mag-cstat">
+          <span class="mag-cstat-n">2026</span>
+          <span class="mag-cstat-l">Crop Year</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 </template>
 
 <style>

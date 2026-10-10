@@ -5,6 +5,7 @@ import home from "./ingles/home";
 import navbar from "./ingles/navbar";
 import offer from "./ingles/offer";
 import story from "./ingles/story";
+import timeline from "./ingles/timeline";
 
 export default {
     ...navbar,
@@ -14,4 +15,6 @@ export default {
     ...offer,
     ...contac,
     ...footer,
+
+    ...timeline,
 }

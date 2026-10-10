@@ -16,7 +16,7 @@
 
             <!-- TIMELINE -->
             <div class="timeline-wrapper">
-                <TimelineNavigation :items="timeline" :active-index="activeIndex" :progress="progressPercentage"
+                <TimelineNavigation :items="translatedTimeline" :active-index="activeIndex" :progress="progressPercentage"
                     :spacing="pointSpacing" @select="selectTimeline" />
 
                 <TimelineCard :item="activeItem" :index="activeIndex" :total="timeline.length"
@@ -41,20 +41,40 @@
     </section>
 </template>
 
+
 <script setup lang="ts">
 import { computed, ref } from "vue";
+import { useI18n } from "vue-i18n";
 
 import TimelineNavigation from "./TimelineNavigation.vue";
 import TimelineCard from "./TimelineCard.vue";
 
 import { timeline } from "./timelineData";
 
+const { t, locale } = useI18n();
+
 const backgroundImage = "/img/coffee/Fondo_2.jpg";
 
 const activeIndex = ref(0);
 
+const translatedTimeline = computed(() => {
+    locale.value;
+
+    return timeline.map((item) => ({
+        ...item,
+        year: item.year.startsWith("timeline.")
+            ? t(item.year)
+            : item.year,
+        title: t(item.title),
+        description: t(item.description),
+        location: item.location
+            ? t(item.location)
+            : "",
+    }));
+});
+
 const activeItem = computed(() => {
-    return timeline[activeIndex.value];
+    return translatedTimeline.value[activeIndex.value];
 });
 
 const progressPercentage = computed(() => {
@@ -85,6 +105,7 @@ const previousTimeline = () => {
     }
 };
 </script>
+
 
 <style scoped>
 .timeline-section {

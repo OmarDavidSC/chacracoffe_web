@@ -5,6 +5,7 @@ import home from "./espanol/home";
 import navbar from "./espanol/navbar";
 import offer from "./espanol/offer";
 import story from "./espanol/story";
+import timeline from "./espanol/timeline";
 
 export default {
     ...navbar,
@@ -13,5 +14,7 @@ export default {
     ...about,
     ...offer,
     ...contact,
-    ...footer
+    ...footer,
+
+    ...timeline,
 }
