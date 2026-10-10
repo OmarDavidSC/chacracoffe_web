@@ -2,29 +2,25 @@
 <section class="faq-section">
     <div class="container">
       <div class="faq-header">
-        <span class="eyebrow gold">Before You Reach Out</span>
-        <h2 class="section-title">Quick <em>answers.</em></h2>
+        <span class="eyebrow gold">{{ $t('street.pill') }}</span>
+        <h2 class="section-title">{{ $t('street.h2') }} <em>{{ $t('street.em') }}</em></h2>
       </div>
       <div class="faq-grid">
         <div class="faq-item">
-          <h3>How do I request samples?</h3>
-          <p>Select "Requesting Samples" in the form above and let us know which origins or processes you're interested
-            in. We typically ship samples within 5–7 business days.</p>
+          <h3>{{ $t('street.t1') }}</h3>
+          <p>{{ $t('street.d1') }}</p>
         </div>
         <div class="faq-item">
-          <h3>What's your minimum order quantity?</h3>
-          <p>MOQs vary by lot — regional blends start at one 69kg bag, while microlots and experimental lots may have
-            smaller availability. Ask us for current stock.</p>
+          <h3>{{ $t('street.t2') }}</h3>
+          <p>{{ $t('street.d2') }}</p>
         </div>
         <div class="faq-item">
-          <h3>Do you ship outside the UK/EU?</h3>
-          <p>Yes — while UK and EU are our primary markets, we can arrange shipping to most destinations. Get in touch
-            for a freight quote.</p>
+          <h3>{{ $t('street.t3') }}</h3>
+          <p>{{ $t('street.d3') }}</p>
         </div>
         <div class="faq-item">
-          <h3>Can I visit the farms?</h3>
-          <p>Absolutely. We regularly host roasters and buyers for origin trips to Jaén and surrounding producer
-            communities. Reach out to plan a visit.</p>
+          <h3>{{ $t('street.t4') }}</h3>
+          <p>{{ $t('street.d4') }}</p>
         </div>
       </div>
     </div>

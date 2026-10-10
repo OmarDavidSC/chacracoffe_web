@@ -2,10 +2,9 @@
 <section class="contact-hero">
     <div class="contact-hero-bg"></div>
     <div class="contact-hero-inner container">
-      <span class="eyebrow gold">Get In Touch</span>
-      <h1 class="page-title">Let's talk<br><em>coffee.</em></h1>
-      <p class="page-sub">Whether you're after our current offer list, a sample box, or just want to learn more about
-        our origins — we usually reply within one business day.</p>
+      <span class="eyebrow gold">{{ $t('hero.pill') }}</span>
+      <h1 class="page-title">{{ $t('hero.h1') }}<br><em>{{ $t('hero.em') }}</em></h1>
+      <p class="page-sub">{{ $t('hero.description') }}</p>
     </div>
   </section>
 </template>
