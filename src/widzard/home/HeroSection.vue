@@ -24,7 +24,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('img/hero.jpg');
+    background-image: url('/img/hero.jpg');
     background-size: cover;
     background-position: center 30%;
     overflow: hidden;
