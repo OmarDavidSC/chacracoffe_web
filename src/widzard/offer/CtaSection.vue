@@ -27,7 +27,7 @@
 .cta-bg {
   position: absolute;
   inset: 0;
-  background-image: url("../img/Fondo_1.jpg");
+  background-image: url("/img/Fondo_1.jpg");
   background-size: cover;
   background-position: center;
 }

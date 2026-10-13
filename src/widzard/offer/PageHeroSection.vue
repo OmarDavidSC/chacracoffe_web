@@ -25,7 +25,7 @@
 .page-hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('../../../public/img/coffee/Fondo_2.jpg');
+    background-image: url('/img/coffee/Fondo_2.jpg');
     background-size: cover;
     background-position: center;
     opacity: .22;

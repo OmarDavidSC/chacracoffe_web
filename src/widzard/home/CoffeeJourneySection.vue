@@ -57,7 +57,7 @@ onMounted(() => {
                 <!-- 01 -->
                 <div class="jstep">
                     <div class="jstep-img" style="
-                            background-image: url('../../public/img/journey/Fondo_1.jpg');
+                            background-image: url('/img/journey/Fondo_1.jpg');
                         "></div>
 
                     <div class="jstep-lbl">
@@ -69,7 +69,7 @@ onMounted(() => {
                 <!-- 02 -->
                 <div class="jstep">
                     <div class="jstep-img" style="
-                            background-image: url('../../public/img/journey/Harvest.jpg');
+                            background-image: url('/img/journey/Harvest.jpg');
                         "></div>
 
                     <div class="jstep-lbl">
@@ -81,7 +81,7 @@ onMounted(() => {
                 <!-- 03 -->
                 <div class="jstep">
                     <div class="jstep-img" style="
-                            background-image: url('../../public/img/journey/Processing.JPG');
+                            background-image: url('/img/journey/Processing.jpg');
                         "></div>
 
                     <div class="jstep-lbl">
@@ -93,7 +93,7 @@ onMounted(() => {
                 <!-- 04 -->
                 <div class="jstep">
                     <div class="jstep-img" style="
-                            background-image: url('../../public/img/journey/Cupping.JPG');
+                            background-image: url('/img/journey/Cupping.JPG');
                         "></div>
 
                     <div class="jstep-lbl">
@@ -105,7 +105,7 @@ onMounted(() => {
                 <!-- 05 -->
                 <div class="jstep">
                     <div class="jstep-img" style="
-                            background-image: url('../../public/img/journey/Export.jpg');
+                            background-image: url('/img/journey/Export.jpg');
                         "></div>
 
                     <div class="jstep-lbl">

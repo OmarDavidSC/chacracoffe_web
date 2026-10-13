@@ -20,7 +20,7 @@
 .story-hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('../../../public/img/coffeestory/Fondo_Web.jpg');
+  background-image: url('/img/coffeestory/Fondo_Web.jpg');
   background-size: cover;
   background-position: center;
   opacity: .22;

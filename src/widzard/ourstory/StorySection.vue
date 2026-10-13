@@ -9,8 +9,8 @@
         <p>{{ $t('story.d3') }}</p>
       </div>
       <div class="history-photos">
-        <div class="hp-main" style="background-image:url('/public/img/coffeestory/Story2.jpg')"></div>
-        <div class="hp-sub" style="background-image:url('/public/img/coffeestory/Story.jpg')"></div>
+        <div class="hp-main" style="background-image:url('/img/coffeestory/Story2.jpg')"></div>
+        <div class="hp-sub" style="background-image:url('/img/coffeestory/Story.jpg')"></div>
       </div>
     </div>
   </section>
