@@ -25,12 +25,13 @@
   position: relative;
   padding: 90px 0;
   overflow: hidden;
+  background: var(--green);
 }
 
 .mv-bg {
   position: absolute;
   inset: 0;
-  background-image: url('/img/coffee/Fondo_2.jpg');
+  /* background: var(--green); */
   background-size: cover;
   background-position: center;
   filter: brightness(.2) saturate(.6);
@@ -45,7 +46,7 @@
 }
 
 .mv-card {
-  background: rgba(255, 255, 255, .04);
+  background: var(--green);
   border: 1px solid rgba(255, 255, 255, .1);
   border-radius: var(--r-lg);
   padding: 44px 38px;

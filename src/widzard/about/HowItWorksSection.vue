@@ -39,7 +39,7 @@
 <style>
 .ab-process-section {
     padding: 90px 0;
-    background: #1a1a1a;
+    background: #1A3026;
 }
 
 .ab-process-section .eyebrow.gold {

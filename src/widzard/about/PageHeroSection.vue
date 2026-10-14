@@ -2,18 +2,18 @@
   <section class="ab-hero">
     <div class="ab-hero-overlay"></div>
     <div class="ab-hero-content">
-      <span class="hero-eyebrow">{{ $t('hero.badge') }}</span>
-      <h1 class="ab-hero-title">{{ $t('hero.h1') }}<br><em>{{ $t('hero.em') }}</em></h1>
-      <p class="ab-hero-sub">{{ $t('hero.description') }}</p>
+      <span class="hero-eyebrow">{{ $t('hero_acount.badge') }}</span>
+      <h1 class="ab-hero-title">{{ $t('hero_acount.h1') }}<br><em>{{ $t('hero_acount.em') }}</em></h1>
+      <p class="ab-hero-sub">{{ $t('hero_acount.description') }}</p>
       <div class="hero-btns">        
-        <router-link to="/ourstory" class="btn btn-gold"> {{ $t('hero.buttom_story') }} </router-link>
-        <router-link to="/contact" class="btn btn-ghost"> {{ $t('hero.buttom_contact') }} </router-link>
+        <router-link to="/ourstory" class="btn btn-gold"> {{ $t('hero_acount.buttom_story') }} </router-link>
+        <router-link to="/contact" class="btn btn-ghost"> {{ $t('hero_acount.buttom_contact') }} </router-link>
       </div>
     </div>
-    <div class="ab-hero-scroll">
+    <!-- <div class="ab-hero-scroll">
       <span>Scroll</span>
       <div class="scroll-bar"></div>
-    </div>
+    </div> -->
   </section>
 </template>
 

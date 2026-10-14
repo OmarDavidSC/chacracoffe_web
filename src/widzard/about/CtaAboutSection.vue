@@ -2,7 +2,7 @@
     <section class="cta-section">
         <div class="cta-bg"></div>
         <div class="cta-inner">
-            <div class="cta-pill">{{ $t('ctaabout.badge') }}</div>
+            <div class="cta-pill">{{ $t('ctaabout.pill') }}</div>
             <h2 class="cta-title">{{ $t('ctaabout.h2') }}<br>{{ $t('ctaabout.br') }}</h2>
             <p class="cta-sub">{{ $t('ctaabout.sub') }}</p>
             <div class="cta-btns">

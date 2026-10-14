@@ -188,13 +188,15 @@ ${form.message}
 .ab-facility {
     position: relative;
     overflow: hidden;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
 }
 
 .ab-who-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 90px;
+    gap: 75px;
 }
 
 /* =========================
@@ -323,8 +325,8 @@ ${form.message}
 ========================= */
 
 .ab-region-contact {
-    margin-top: 32px;
-    padding: 28px;
+    margin-top: 40px;
+    padding: 35px;
     background: rgba(255, 255, 255, 0.38);
     border: 1px solid rgba(180, 142, 72, 0.16);
     position: relative;
@@ -592,6 +594,11 @@ ${form.message}
 ========================= */
 
 @media (max-width: 600px) {
+    .ab-facility {
+        padding-top: 65px !important;
+        padding-bottom: 65px !important;
+    }
+
     .ab-who-grid {
         gap: 45px;
     }

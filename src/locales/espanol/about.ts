@@ -1,5 +1,5 @@
 export default {
-    hero: {
+    hero_acount: {
         badge: `Jaén, Cajamarca — Perú`,
         h1: "Acerca de", em: 'Chacra',
         description: `Un exportador de café de especialidad nacido en las tierras altas de Cajamarca, construido sobre relaciones sólidas, calidad y transparencia.`,

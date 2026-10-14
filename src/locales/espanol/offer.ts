@@ -16,7 +16,7 @@ export default {
         buttom_offer: 'Solicitar lista de ofertas',
         buttom_contact: 'Contáctanos',
     },
-    hero: {
+    hero_offer: {
         pill: 'Lista de ofertas 2026',
         h1: 'Nuestros', em: 'cafés.',
         sub: `Un catálogo seleccionado de cafés de especialidad del norte del Perú: mezclas regionales, microlotes de origen único y lotes con procesos experimentales, todos con control de calidad y listos para exportación.`,

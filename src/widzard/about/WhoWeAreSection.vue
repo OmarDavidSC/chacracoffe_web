@@ -65,7 +65,6 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-
 .ab-who {
   background: var(--ivory);
   padding: 110px 0 100px;
@@ -82,6 +81,7 @@ onBeforeUnmount(() => {
 .ab-who-img {
   position: relative;
   height: 520px;
+  margin-top: -40px;
 }
 
 .ab-img-main {
@@ -89,13 +89,14 @@ onBeforeUnmount(() => {
   inset: 0;
   border-radius: var(--r-lg);
   background-size: cover;
-  background-position: center;
+  background-position: center 35%;
   box-shadow: var(--sh-lg);
   opacity: 0;
   transform: translateX(-60px) scale(0.97);
   transition:
     opacity 1s ease,
     transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+
 }
 
 .ab-who-img.is-visible .ab-img-main {
@@ -109,7 +110,7 @@ onBeforeUnmount(() => {
   position: absolute;
   width: 52%;
   height: 46%;
-  bottom: -28px;
+  bottom: 0;
   right: -28px;
   border-radius: var(--r-md);
   background-size: cover;

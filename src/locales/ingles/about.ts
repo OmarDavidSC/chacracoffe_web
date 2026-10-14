@@ -1,5 +1,5 @@
 export default {
-    hero: {
+    hero_acount: {
         badge: `Jaén, Cajamarca — Peru`,
         h1: "About", em: 'Chacra',
         description: `A specialty coffee exporter born in the highlands of Cajamarca — built on relationships,

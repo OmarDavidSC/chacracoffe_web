@@ -89,7 +89,7 @@
 
 .footer-logo {
   height: 58px;
-  width: auto;
+  width: 80px;
   object-fit: contain;
 }
 

@@ -17,9 +17,9 @@ export default {
         buttom_offer: 'Request Offer List',
         buttom_contact: 'Contact Us',
     },
-    hero: {
+    hero_offer: {
         pill: 'Offer List 2026',
-        h1: 'Our', em: 'Coffees.',
+        h1: 'Current', em: 'Ofert List.',
         sub: `A curated catalogue of specialty coffees from Northern Peru — regional blends,
                 single-origin microlots and experimental process lots, all quality-controlled and ready for export.`,
         d1: 'Active Lots',

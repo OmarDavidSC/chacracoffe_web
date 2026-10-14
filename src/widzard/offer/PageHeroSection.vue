@@ -2,13 +2,13 @@
     <section class="page-hero">
         <div class="page-hero-bg"></div>
         <div class="page-hero-inner container">
-            <span class="eyebrow gold">{{ $t('hero.pill') }}</span>
-            <h1 class="page-title">{{ $t('hero.h1') }} <em>{{ $t('hero.em') }}</em></h1>
-            <p class="page-sub">{{ $t('hero.sub') }}</p>
+            <span class="eyebrow gold">{{ $t('hero_offer.pill') }}</span>
+            <h1 class="page-title">{{ $t('hero_offer.h1') }} <em>{{ $t('hero_offer.em') }}</em></h1>
+            <p class="page-sub">{{ $t('hero_offer.sub') }}</p>
             <div class="page-stats">
-                <div class="ps-item"><span class="ps-num">38</span><span class="ps-lbl">{{ $t('hero.d1') }}</span></div>
-                <div class="ps-item"><span class="ps-num">83–88+</span><span class="ps-lbl">{{ $t('hero.d2') }}</span></div>
-                <div class="ps-item"><span class="ps-num">6</span><span class="ps-lbl">{{ $t('hero.d3') }}</span></div>
+                <div class="ps-item"><span class="ps-num">38</span><span class="ps-lbl">{{ $t('hero_offer.d1') }}</span></div>
+                <div class="ps-item"><span class="ps-num">83 – 88+</span><span class="ps-lbl">{{ $t('hero_offer.d2') }}</span></div>
+                <div class="ps-item"><span class="ps-num">6</span><span class="ps-lbl">{{ $t('hero_offer.d3') }}</span></div>
             </div>
         </div>
     </section>
