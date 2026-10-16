@@ -176,7 +176,7 @@ export const coffeeLots: CoffeeLot[] = [
 
     {
         id: 11,
-        name: "José Quispe Honey",
+        name: "Andy Llano",
         category: "regional",
         process: "honey",
         origin: "cajamarca",
@@ -186,7 +186,7 @@ export const coffeeLots: CoffeeLot[] = [
             "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80",
         score: 87,
         badge: "NANO LOTS",
-        tags: ["Natural"],
+        tags: ["Washed", "Natural"],
         notes: "Floral, naranjilla, sweet, lemon verbena, green apple",
     },
 

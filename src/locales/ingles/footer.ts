@@ -15,6 +15,8 @@ export default {
         l10: 'Offert List',
         contact: 'Contact',
         social: 'Follow Us',
-        span: 'CHACRA COFFEE LIMITED. ALL RIGHTS RESERVED.'
+        span: 'CHACRA COFFEE LIMITED. ALL RIGHTS RESERVED.',
+        privacy: 'Privacy Policy',
+        term: 'Terms', con: 'Conditions'
     }
 }

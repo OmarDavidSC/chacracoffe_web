@@ -4,7 +4,7 @@
             <div class="ab-who-grid">
                 <!-- IMAGEN -->
                 <div class="ab-who-img" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
-                    <div class="ab-img-main" style="background-image: url(&quot;/img/about/Processing.jpg&quot;)">
+                    <div class="ab-img-main" style="background-image: url(&quot;/img/insidetheplant/PLanta_01.jpg&quot;)">
                         <div class="ab-img-badge" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="700"
                             data-aos-once="true">
                             <strong>{{ $t('facility.strong') }}</strong>

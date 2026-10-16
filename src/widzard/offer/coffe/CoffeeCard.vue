@@ -18,7 +18,7 @@
                 gold: lot.category !== 'regional',
             }">
                 <span>
-                    {{ lot.score }}
+                    {{ lot.score }} +
                 </span>
             </div>
         </div>

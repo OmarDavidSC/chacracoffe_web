@@ -3,38 +3,46 @@
     <div class="footer-inner container">
       <div class="footer-brand">
         <img src="../../public/img/Logo_Chacra.png" alt="Chacra Coffee" class="footer-logo logo-img">
-        <p class="footer-tag">{{$t('footer.p1')}}<br>{{$t('footer.br')}}</p>
+        <p class="footer-tag">{{ $t('footer.p1') }}<br>{{ $t('footer.br') }}</p>
       </div>
       <div class="footer-cols">
         <div class="footer-col">
-          <h4>{{$t('footer.company')}}</h4>
+          <h4>{{ $t('footer.company') }}</h4>
           <ul>
-            <li><router-link to="/home">{{$t('footer.l1')}}</router-link></li>
-            <li><router-link to="/ourstory">{{$t('footer.l2')}}</router-link></li>
-            <li><router-link to="/about">{{$t('footer.l3')}}</router-link></li>
-            <li><router-link to="/offer">{{$t('footer.l4')}}</router-link></li>
-            <li><router-link to="/blog">{{$t('footer.l5')}}</router-link></li>
-            <li><router-link to="/contact">{{$t('footer.l6')}}</router-link></li>
+            <li><router-link to="/home">{{ $t('footer.l1') }}</router-link></li>
+            <li><router-link to="/ourstory">{{ $t('footer.l2') }}</router-link></li>
+            <li><router-link to="/about">{{ $t('footer.l3') }}</router-link></li>
+            <li><router-link to="/offer">{{ $t('footer.l4') }}</router-link></li>
+            <li><router-link to="/blog">{{ $t('footer.l5') }}</router-link></li>
+            <li><router-link to="/contact">{{ $t('footer.l6') }}</router-link></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>{{$t('footer.coffees')}}</h4>
+          <h4>{{ $t('footer.coffees') }}</h4>
           <ul>
-            <li><RouterLink to="/offer">{{$t('footer.l7')}}</RouterLink></li>
-            <li><RouterLink to="/offer">{{$t('footer.l8')}}</RouterLink></li>
-            <li><RouterLink to="/offer">{{$t('footer.l9')}}</RouterLink></li>
-            <li><RouterLink to="/offer">{{$t('footer.l10')}}</RouterLink></li>
+            <li>
+              <RouterLink to="/offer">{{ $t('footer.l7') }}</RouterLink>
+            </li>
+            <li>
+              <RouterLink to="/offer">{{ $t('footer.l8') }}</RouterLink>
+            </li>
+            <li>
+              <RouterLink to="/offer">{{ $t('footer.l9') }}</RouterLink>
+            </li>
+            <li>
+              <RouterLink to="/offer">{{ $t('footer.l10') }}</RouterLink>
+            </li>
           </ul>
         </div>
-        
+
         <div class="footer-col">
-          <h4>{{$t('footer.contact')}}</h4>
+          <h4>{{ $t('footer.contact') }}</h4>
           <ul>
             <li><a href="mailto:info@chacracoffee.com">info@chacracoffee.com</a></li>
             <li><a href="https://wa.me/51937791406">+51 937 791 406</a></li>
             <li>Jaén, Cajamarca, Peru</li>
           </ul>
-          <div class="footer-social"><span>{{$t('footer.social')}}</span>
+          <div class="footer-social"><span>{{ $t('footer.social') }}</span>
             <div class="socials">
               <!-- Instagram -->
               <a href="https://www.instagram.com/chacracoffee/" class="soc-ico" target="_blank"
@@ -61,15 +69,18 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year"></span>{{$t('footer.span')}}</span>
-      <!-- <div><a href="Privacy.html">Privacy Policy</a><a href="Conditions.html">Terms &amp; Conditions</a></div> -->
+      <span>© <span id="year"></span>{{ $t('footer.span') }}</span>
+      <div>
+        <router-link to="/privacy" target="_blank">{{ $t('footer.privacy') }}</router-link>
+        <router-link to="/conditions" target="_blank">{{ $t('footer.term') }} &amp; {{ $t('footer.con') }}</router-link>
+      </div>
     </div>
   </footer>
 </template>
 
 <style>
 .footer {
-  background: var(--charcoal);
+  background: var(--green);
   padding-top: 64px;
 }
 

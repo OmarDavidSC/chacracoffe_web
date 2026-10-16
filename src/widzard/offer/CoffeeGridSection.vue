@@ -1,6 +1,5 @@
 <template>
-  <main class="coffees-page">
-    <!-- HEADER -->
+  <!-- <main class="coffees-page">
     <section class="coffees-hero">
       <div class="container">
         <span class="eyebrow gold"> {{ $t('grid.pill') }} </span>
@@ -16,9 +15,10 @@
       </div>
     </section>
 
-    <!-- CATALOG -->
+    
+  </main> -->
+  <!-- CATALOG -->
     <CoffeeCatalog />
-  </main>
 </template>
 
 <script setup lang="ts">

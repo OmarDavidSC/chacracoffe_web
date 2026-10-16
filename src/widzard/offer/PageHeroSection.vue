@@ -7,7 +7,7 @@
             <p class="page-sub">{{ $t('hero_offer.sub') }}</p>
             <div class="page-stats">
                 <div class="ps-item"><span class="ps-num">38</span><span class="ps-lbl">{{ $t('hero_offer.d1') }}</span></div>
-                <div class="ps-item"><span class="ps-num">83 – 88+</span><span class="ps-lbl">{{ $t('hero_offer.d2') }}</span></div>
+                <div class="ps-item"><span class="ps-num">83 – 88 +</span><span class="ps-lbl">{{ $t('hero_offer.d2') }}</span></div>
                 <div class="ps-item"><span class="ps-num">6</span><span class="ps-lbl">{{ $t('hero_offer.d3') }}</span></div>
             </div>
         </div>

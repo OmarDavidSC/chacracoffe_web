@@ -5,6 +5,8 @@ import StoryView from "../views/StoryView.vue";
 import AboutView from "../views/AboutView.vue";
 import ContactView from "../views/ContactView.vue";
 import BlogView from "../views/BlogView.vue";
+import PrivacyView from "../views/PrivacyView.vue";
+import ConditionsView from "../views/ConditionsView.vue";
 
 
 const routes: RouteRecordRaw[] = [
@@ -14,6 +16,8 @@ const routes: RouteRecordRaw[] = [
     { path: '/about', name: 'about', component: AboutView },
     { path: '/contact', name: 'contact', component: ContactView },
     {path: '/blog', name: 'blog', component: BlogView},
+    {path: '/privacy', name: 'privacy', component: PrivacyView},
+    {path: '/conditions', name: 'conditions', component: ConditionsView},
 
 ];
 

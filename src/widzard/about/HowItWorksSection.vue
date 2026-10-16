@@ -90,7 +90,7 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: #1a1a1a;
+    background: #1A3026;
     border: 2px solid #C8A85A;
     color: #C8A85A;
     display: flex;
