@@ -71,8 +71,8 @@
     <div class="footer-bottom">
       <span>© <span id="year"></span>{{ $t('footer.span') }}</span>
       <div>
-        <router-link to="/privacy" target="_blank">{{ $t('footer.privacy') }}</router-link>
-        <router-link to="/conditions" target="_blank">{{ $t('footer.term') }} &amp; {{ $t('footer.con') }}</router-link>
+        <router-link to="/privacy">{{ $t('footer.privacy') }}</router-link>
+        <router-link to="/conditions">{{ $t('footer.term') }} &amp; {{ $t('footer.con') }}</router-link>
       </div>
     </div>
   </footer>
