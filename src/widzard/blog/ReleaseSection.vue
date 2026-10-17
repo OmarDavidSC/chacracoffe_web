@@ -45,7 +45,7 @@
     </header>
 
     <!-- Ticker -->
-    <div class="nr-ticker">
+    <!-- <div class="nr-ticker">
       <div class="nr-ticker-inner">
         <span>{{ $t("ticker_blog.harvest") }}</span><span class="td">·</span> <span>{{ $t("ticker_blog.origin")
         }}</span><span class="td">·</span> <span>{{ $t("ticker_blog.score") }}</span><span class="td">·</span>
@@ -59,7 +59,7 @@
         <span>{{ $t("ticker_blog.verification") }}</span><span class="td">·</span> <span>{{ $t("ticker_blog.shipping")
         }}</span><span class="td">·</span>
       </div>
-    </div>
+    </div> -->
 
     <!-- ============================================================ FILTROS -->
     <div class="nw-filter">

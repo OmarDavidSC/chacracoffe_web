@@ -80,7 +80,7 @@
 
 <style>
 .footer {
-  background: var(--green);
+  background: var(--charcoal);
   padding-top: 64px;
 }
 

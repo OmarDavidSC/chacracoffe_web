@@ -8,29 +8,26 @@ import BlogView from "../views/BlogView.vue";
 import PrivacyView from "../views/PrivacyView.vue";
 import ConditionsView from "../views/ConditionsView.vue";
 
-
 const routes: RouteRecordRaw[] = [
-    { path: '/', name: 'home', component: HomeView },
-    { path: '/offer', name: 'offer', component: OfferListView },
-    { path: '/ourstory', name: 'ourstory', component: StoryView },
-    { path: '/about', name: 'about', component: AboutView },
-    { path: '/contact', name: 'contact', component: ContactView },
-    {path: '/blog', name: 'blog', component: BlogView},
-    {path: '/privacy', name: 'privacy', component: PrivacyView},
-    {path: '/conditions', name: 'conditions', component: ConditionsView},
-
+    { path: "/", name: "home", component: HomeView },
+    { path: "/offer", name: "offer", component: OfferListView },
+    { path: "/ourstory", name: "ourstory", component: StoryView },
+    { path: "/about", name: "about", component: AboutView },
+    { path: "/contact", name: "contact", component: ContactView },
+    { path: "/blog", name: "blog", component: BlogView },
+    { path: "/privacy", name: "privacy", component: PrivacyView },
+    { path: "/conditions", name: "conditions", component: ConditionsView },
 ];
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes,
     scrollBehavior() {
         return {
             top: 0,
-            behavior: 'smooth'
-        }
-    }
+            behavior: "smooth",
+        };
+    },
 });
-
 
 export default router;

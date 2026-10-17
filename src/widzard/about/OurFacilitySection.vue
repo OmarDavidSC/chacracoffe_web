@@ -5,11 +5,11 @@
                 <!-- IMAGEN -->
                 <div class="ab-who-img" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                     <div class="ab-img-main" style="background-image: url(&quot;/img/insidetheplant/PLanta_01.jpg&quot;)">
-                        <div class="ab-img-badge" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="700"
+                        <!-- <div class="ab-img-badge" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="700"
                             data-aos-once="true">
                             <strong>{{ $t('facility.strong') }}</strong>
                             {{ $t('green') }}
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -476,7 +476,7 @@ ${form.message}
     margin-top: 5px;
     padding: 13px 20px;
     border: 1px solid var(--gold);
-    background: var(--gold);
+    background: var(--green);
     color: var(--white);
     font-size: 8px;
     font-weight: 700;
