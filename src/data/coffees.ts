@@ -176,7 +176,7 @@ export const coffeeLots: CoffeeLot[] = [
 
     {
         id: 11,
-        name: "Andy Llano",
+        name: "Andy Llanos",
         category: "regional",
         process: "honey",
         origin: "cajamarca",

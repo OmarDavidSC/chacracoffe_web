@@ -476,7 +476,7 @@ ${form.message}
     margin-top: 5px;
     padding: 13px 20px;
     border: 1px solid var(--gold);
-    background: var(--green);
+    background: var(--gold);
     color: var(--white);
     font-size: 8px;
     font-weight: 700;
